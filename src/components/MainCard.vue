@@ -89,6 +89,7 @@
     justify-content: center;
     width: 60%;
     margin-bottom: 1em;
+    margin-top: 1em;
   }
 
   .first-container {
