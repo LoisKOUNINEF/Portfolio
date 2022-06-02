@@ -1,55 +1,57 @@
 <template>
-  <div class="main-container">
-    <div class="first-container">
-      <div class="profile">
-        <img src="" alt="profile picture">
-        <h1>Loïs Kouninef</h1>
-        <h4>Web Developper</h4>
+  <div class="wrapper">
+    <div class="main-container">
+      <div class="first-container">
+        <div class="profile">
+          <img src="" alt="profile picture">
+          <h1>Loïs Kouninef</h1>
+          <h4>Web Developper</h4>
+        </div>
+        <div class="social-links">
+          <div class="link">
+            <a href="">
+              <img src="" alt="">
+              <p>GitHub</p>
+            </a>
+          </div>
+        </div>
+        <div class="social-links">
+          <div class="link">
+            <a href="">
+              <img src="" alt="">
+              <p>LinkedIn</p>
+            </a>
+          </div>
+        </div>
+        <div class="social-links">
+          <div class="link">
+            <a href="">
+              <img src="" alt="">
+              <p>Medium? Email?</p>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="social-links">
-        <div class="link">
-          <a href="">
+      <div class="second-container">
+        <div class="about-me">
+          <h2>A Propos</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eum? Ipsam iure similique esse dignissimos rerum quia sed, debitis sint!</p>
+        </div>
+        <div class="technologies">
+          <h2>Technologies</h2>
+          <div class="logos">
             <img src="" alt="">
-            <p>GitHub</p>
-          </a>
-        </div>
-      </div>
-      <div class="social-links">
-        <div class="link">
-          <a href="">
             <img src="" alt="">
-            <p>LinkedIn</p>
-          </a>
-        </div>
-      </div>
-      <div class="social-links">
-        <div class="link">
-          <a href="">
             <img src="" alt="">
-            <p>Medium? Email?</p>
-          </a>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="second-container">
-      <div class="about-me">
-        <h2>A Propos</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eum? Ipsam iure similique esse dignissimos rerum quia sed, debitis sint!</p>
-      </div>
-      <div class="technologies">
-        <h2>Technologies</h2>
-        <div class="logos">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-        </div>
-      </div>
-      <div class="button-container">
-        <div class="project-button">
-          <a href="">Mes projets</a>
-        </div>
-        <div class="project-button">
-          <a href="">Mon CV</a>
+        <div class="button-container">
+          <div class="project-button">
+            <a href="">Mes projets</a>
+          </div>
+          <div class="project-button">
+            <a href="">Mon CV</a>
+          </div>
         </div>
       </div>
     </div>
@@ -64,6 +66,11 @@
 
 <style scoped>
 
+  .wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
   a{
     text-decoration: none;
     color: ;
@@ -71,6 +78,7 @@
 
   .main-container {
     display: flex;
+    width: 60%;
   }
 
   .first-container {
@@ -78,6 +86,7 @@
     width: ;
     padding: ;
     border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
   .second-container {
@@ -85,6 +94,7 @@
     width: ;
     padding: ;
     border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
   .profile img {
@@ -102,7 +112,7 @@
 
   .button-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
   }
 
@@ -113,5 +123,10 @@
     border-radius: ;
   }
 
+  @media only screen and (max-width: 950px) {
+    .main-container {
+      width: 95%;
+    }
+  }
 
 </style>
