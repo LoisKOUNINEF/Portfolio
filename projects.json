@@ -2,27 +2,43 @@
   "ProjectsArray" : [
     {
       "id" : 1,
-      "Title" : "Premier Projet",
-      "About" : "lorem ipsum dolor sic nergetur",
+      "Title" : "NotePad",
+      "About" : "App de prise de notes en React avec localStorage & syntaxe .md .",
       "Image" : "",
-      "GHLink" : "",
-      "LiveLink" : ""
+      "GHLink" : "https://github.com/LoisKOUNINEF/React_NotePad",
+      "LiveLink" : "http://loiskouninef.github.io/React_NotePad"
     },
     {
       "id" : 2,
-      "Title" : "Second Projet",
-      "About" : "lorem ipsum dolor sic nergetur",
+      "Title" : "A Star Pathfinder",
+      "About" : "Visualisation en Javascript de l'algorythme de pathfinding A*. Possibilité de glisser / déposer les cases de départ et d'arrivée et de tracer des obstacles.",
       "Image" : "",
-      "GHLink" : "",
-      "LiveLink" : ""
+      "GHLink" : "https://github.com/LoisKOUNINEF/Pathfinding_Algo_JSVanilla",
+      "LiveLink" : "https://loiskouninef.github.io/Pathfinding_Algo_JSVanilla/"
     },
     {
       "id" : 3,
-      "Title" : "Troisième Projet",
-      "About" : "lorem ipsum dolor sic nergetur",
+      "Title" : "Tetris",
+      "About" : "Un clone du jeu de légende, codé en React, avec utilisation de custom hooks et de styled components. Score sauvegardé via localStorage.",
       "Image" : "",
-      "GHLink" : "",
-      "LiveLink" : ""
+      "GHLink" : "https://github.com/LoisKOUNINEF/Tetris_React",
+      "LiveLink" : "https://loiskouninef.github.io/Tetris_React"
+    },
+        {
+      "id" : 4,
+      "Title" : "Snake",
+      "About" : "Un clone du classique de l'ère Nokia, codé en Javascript. Jouable sur écran tactile, score sauvegardé via localStorage.",
+      "Image" : "",
+      "GHLink" : "https://github.com/LoisKOUNINEF/Snake_JSVanilla",
+      "LiveLink" : "https://loiskouninef.github.io/Snake_JSVanilla/"
+    },
+        {
+      "id" : 5,
+      "Title" : "Template d'Email en HTML",
+      "About" : "Une base flexible et adaptable d'email en HTML. Utilisation des tables et style en ligne. Compatible avec l'immense majorité des clients mail.",
+      "Image" : "",
+      "GHLink" : "https://github.com/LoisKOUNINEF/HTML_Email_Template",
+      "LiveLink" : "https://loiskouninef.github.io/HTML_Email_Template/"
     }
   ]
 }
