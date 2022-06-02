@@ -41,6 +41,7 @@
   .main-container {
     display: flex;
     flex-wrap: wrap;
+    width: 90%;
     justify-content: center;
     margin-bottom: 1em;
   }
