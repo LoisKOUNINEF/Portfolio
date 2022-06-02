@@ -2,20 +2,21 @@
   "ProjectsArray" : [
     {
       "id" : 1,
+      "Title" : "Le Brignolais Sportif",
+      "About" : "Réalisation du site d'un journal sportif qui reçoit jusqu'à 3000 visiteurs mensuels. Possibilité de s'inscrire, de se connecter et de s'abonner avec l'API Stripe (trois formules d'abonnement). Commentaires imbriqués et mise en place de relations polymorphiques. Codé avec Ruby on Rails.",
+      "Image" : "",
+      "GHLink" : "https://github.com/LoisKOUNINEF/Le_Brignolais_Sportif",
+      "LiveLink" : ""
+    },
+    {
+      "id" : 2,
       "Title" : "NotePad",
       "About" : "App de prise de notes en React avec localStorage & syntaxe .md .",
       "Image" : "",
       "GHLink" : "https://github.com/LoisKOUNINEF/React_NotePad",
       "LiveLink" : "http://loiskouninef.github.io/React_NotePad"
     },
-    {
-      "id" : 2,
-      "Title" : "A Star Pathfinder",
-      "About" : "Visualisation en Javascript de l'algorythme de pathfinding A*. Possibilité de glisser / déposer les cases de départ et d'arrivée et de tracer des obstacles.",
-      "Image" : "",
-      "GHLink" : "https://github.com/LoisKOUNINEF/Pathfinding_Algo_JSVanilla",
-      "LiveLink" : "https://loiskouninef.github.io/Pathfinding_Algo_JSVanilla/"
-    },
+
     {
       "id" : 3,
       "Title" : "Tetris",
@@ -24,7 +25,7 @@
       "GHLink" : "https://github.com/LoisKOUNINEF/Tetris_React",
       "LiveLink" : "https://loiskouninef.github.io/Tetris_React"
     },
-        {
+    {
       "id" : 4,
       "Title" : "Snake",
       "About" : "Un clone du classique de l'ère Nokia, codé en Javascript. Jouable sur écran tactile, score sauvegardé via localStorage.",
@@ -32,13 +33,21 @@
       "GHLink" : "https://github.com/LoisKOUNINEF/Snake_JSVanilla",
       "LiveLink" : "https://loiskouninef.github.io/Snake_JSVanilla/"
     },
-        {
+    {
       "id" : 5,
       "Title" : "Template d'Email en HTML",
       "About" : "Une base flexible et adaptable d'email en HTML. Utilisation des tables et style en ligne. Compatible avec l'immense majorité des clients mail.",
       "Image" : "",
       "GHLink" : "https://github.com/LoisKOUNINEF/HTML_Email_Template",
       "LiveLink" : "https://loiskouninef.github.io/HTML_Email_Template/"
+    },
+    {
+      "id" : 6,
+      "Title" : "A Star Pathfinder",
+      "About" : "Visualisation en Javascript de l'algorythme de pathfinding A*. Possibilité de glisser / déposer les cases de départ et d'arrivée et de tracer des obstacles.",
+      "Image" : "",
+      "GHLink" : "https://github.com/LoisKOUNINEF/Pathfinding_Algo_JSVanilla",
+      "LiveLink" : "https://loiskouninef.github.io/Pathfinding_Algo_JSVanilla/"
     }
   ]
 }
