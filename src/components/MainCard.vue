@@ -5,11 +5,11 @@
         <div class="profile">
           <img src="" alt="profile picture">
           <h1>Loïs Kouninef</h1>
-          <h4>Web Developper</h4>
+          <h3><i>Web Developper</i></h3>
         </div>
         <div class="social-links">
           <div class="link">
-            <a href="">
+            <a href="https://github.com/LoisKOUNINEF" target="_blank">
               <img src="../assets/logos/github.png" alt="github">
               <h3>GitHub</h3>
             </a>
@@ -17,7 +17,7 @@
         </div>
         <div class="social-links">
           <div class="link">
-            <a href="">
+            <a href="https://www.linkedin.com/in/lo%C3%AFs-kouninef-b1651122a/" target="_blank">
               <img src="../assets/logos/linkedin.png" alt="linkedin">
               <h3>LinkedIn</h3>
             </a>
@@ -25,9 +25,9 @@
         </div>
         <div class="social-links">
           <div class="link">
-            <a href="">
+            <a href="https://medium.com/@lkouninef" target="_blank">
               <img src="../assets/logos/medium.png" alt="">
-              <h3>Medium? Email?</h3>
+              <h3>Medium</h3>
             </a>
           </div>
         </div>
@@ -92,7 +92,7 @@
   }
 
   .first-container {
-    background: linear-gradient(#00319C, #0050FF);
+    background: linear-gradient(to bottom right, #00319C, #0050FF);
     color: #fff;
     width: 30%;
     padding: 1em;
@@ -105,7 +105,7 @@
   }
 
   .second-container {
-    background: linear-gradient(#5B82DE, #849FDE);
+    background: linear-gradient(to bottom right, #5B82DE, #849FDE);
     width: 70%;
     padding: 3em;
     border-radius: 1.5em;
@@ -134,7 +134,7 @@
   }
 
   .project-button {
-    background-color: #fff;
+    background: linear-gradient(30deg, #00319C, #0050FF);
     padding: 1em;
     font-weight: 600;
     margin-top: 1em;
@@ -146,7 +146,7 @@
   }
 
   .project-button a {
-    color: black;
+    color: #fff;
   }
 
   @media only screen and (max-width: 950px) {
