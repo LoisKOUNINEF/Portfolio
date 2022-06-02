@@ -2,8 +2,10 @@
   <div class="wrapper">
     <div class="main-container" id="project">
       <div class="project-card" v-for="(items, index) in projectData.ProjectsArray" v-bind:key="items">
-        <h2> {{ projectData.ProjectsArray[index].Title }} </h2>
-        <img :src="projectData.ProjectsArray[index].Image" :alt="projectData.ProjectsArray[index].Title">
+        <div class="about">
+          <h2> {{ projectData.ProjectsArray[index].Title }} </h2>
+          <img :src="projectData.ProjectsArray[index].Image" :alt="projectData.ProjectsArray[index].Title">
+        </div>
         <p>{{ projectData.ProjectsArray[index].About }}</p>
         <div class="links">
           <a :href="projectData.ProjectsArray[index].GHLink" target="_blank"><img src="../assets/logos/github.png" alt="GitHub"></a>
@@ -53,7 +55,7 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
-  .project-card img {
+  .about img {
     height: 10rem;
   }
 
@@ -69,7 +71,7 @@
     margin-top: 1em;
   }
 
-  @media only screen and (max-width: 950px) {
+  @media only screen and (max-width: 900px) {
     .main-container {
       width: 95%;
       flex-wrap: wrap;
@@ -78,6 +80,7 @@
     .project-card {
       width: 80%;
     }
-}
+
+  }
 
 </style>
