@@ -3,7 +3,7 @@
     <div class="main-container">
       <div class="project-card" v-for="(items, index) in projectData.ProjectsArray" v-bind:key="items">
         <h2> {{ projectData.ProjectsArray[index].Title }} </h2>
-        <img :src="projectData.ProjectsArray[index].Image" alt="">
+        <img :src="projectData.ProjectsArray[index].Image" :alt="projectData.ProjectsArray[index].Title">
         <p>{{ projectData.ProjectsArray[index].About }}</p>
         <div class="links">
           <a :href="projectData.ProjectsArray[index].GHLink" target="_blank"><img src="" alt="GitHub"></a>
@@ -39,12 +39,13 @@
   .main-container {
     display: flex;
     flex-wrap: wrap;
-    width: 60%;
     justify-content: center;
     align-items: center;
   }
 
   .project-card {
+    margin: 10px;
+    padding: 10px;
     flex-wrap: 0 0 40%;
     background-color: ;
     border-radius: 15px;
@@ -52,7 +53,7 @@
   }
 
   .project-card img {
-    height: ;
+    height: 10rem;
   }
 
   .links {

@@ -71,28 +71,29 @@
     justify-content: center;
   }
 
-  a{
+  a {
     text-decoration: none;
     color: ;
   }
 
   .main-container {
     display: flex;
+    justify-content: center;
     width: 60%;
   }
 
   .first-container {
     background-color: ;
-    width: ;
-    padding: ;
+    width: 30%;
+    padding: 2.5%;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
   .second-container {
     background-color: ;
-    width: ;
-    padding: ;
+    width: 70%;
+    padding: 2.5%;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
@@ -114,6 +115,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 3em;
   }
 
   .project-button {
@@ -126,6 +128,11 @@
   @media only screen and (max-width: 950px) {
     .main-container {
       width: 95%;
+      flex-wrap: wrap;
+    }
+
+    .first-container {
+      width: 70%;
     }
   }
 
