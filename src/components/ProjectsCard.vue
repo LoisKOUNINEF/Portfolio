@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <div class="main-container">
+    <div class="main-container" id="project">
       <div class="project-card" v-for="(items, index) in projectData.ProjectsArray" v-bind:key="items">
         <h2> {{ projectData.ProjectsArray[index].Title }} </h2>
         <img :src="projectData.ProjectsArray[index].Image" :alt="projectData.ProjectsArray[index].Title">
@@ -41,11 +41,13 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1em;
   }
 
   .project-card {
-    margin: 10px;
-    padding: 10px;
+    width: 40%;
+    margin: 1em;
+    padding: 1em;
     flex-wrap: 0 0 40%;
     background-color: ;
     border-radius: 15px;
@@ -66,5 +68,16 @@
     height: ;
     margin: ;
   }
+
+  @media only screen and (max-width: 950px) {
+    .main-container {
+      width: 95%;
+      flex-wrap: wrap;
+    }
+
+    .project-card {
+      width: 80%;
+    }
+}
 
 </style>

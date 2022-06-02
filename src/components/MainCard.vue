@@ -47,7 +47,7 @@
         </div>
         <div class="button-container">
           <div class="project-button">
-            <a href="">Mes projets</a>
+            <a href="#project">Mes projets</a>
           </div>
           <div class="project-button">
             <a href="">Mon CV</a>
@@ -132,6 +132,10 @@
     }
 
     .first-container {
+      width: 70%;
+    }
+
+    .second-container {
       width: 70%;
     }
   }
