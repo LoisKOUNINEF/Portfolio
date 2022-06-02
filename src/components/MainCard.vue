@@ -3,9 +3,9 @@
     <div class="main-container">
       <div class="first-container">
         <div class="profile">
-          <img src="" alt="profile picture">
+          <img src="../assets/profile.jpg" alt="profile picture">
           <h1>Loïs Kouninef</h1>
-          <h3><i>Web Developper</i></h3>
+          <h3><i>Développeur Web</i></h3>
         </div>
         <div class="social-links">
           <div class="link">
@@ -35,7 +35,7 @@
       <div class="second-container">
         <div class="about-me">
           <h2>A Propos</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eum? Ipsam iure similique esse dignissimos rerum quia sed, debitis sint Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quasi deserunt est id asperiores repudiandae Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Provident iusto quaerat voluptates tenetur pariatur? Consequuntur non, facilis voluptates. Sequi, nisi.</p>
+          <p>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Totam ratione dolore itaque ad id nobis nam esse alias a, error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eum? Ipsam iure similique esse dignissimos rerum quia sed, debitis sint Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quasi deserunt est id asperiores repudiandae Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Provident iusto quaerat voluptates tenetur pariatur? Consequuntur non, facilis voluptates. Sequi, nisi.</p>
         </div>
         <div class="technologies">
           <h2>Technologies</h2>
@@ -92,7 +92,7 @@
   }
 
   .first-container {
-    background: linear-gradient(to bottom right, #00319C, #0050FF);
+    background: linear-gradient(to bottom right, #00319C 40%, #0050FF);
     color: #fff;
     width: 30%;
     padding: 1em;
@@ -105,7 +105,7 @@
   }
 
   .second-container {
-    background: linear-gradient(to bottom right, #5B82DE, #849FDE);
+    background: linear-gradient(#849FDE 65%, #5B82DE);
     width: 70%;
     padding: 3em;
     border-radius: 1.5em;
@@ -113,12 +113,17 @@
   }
 
   .profile img {
-    height: ;
+    margin-top: 1rem;
+    height: 8rem;
     border-radius: 50%;
   }
 
   .link img {
     height: 4em;
+  }
+
+  .technologies {
+    margin-top: 3em;
   }
 
   .logos img {
@@ -130,7 +135,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 2em;
+    margin-top: 4em;
   }
 
   .project-button {
@@ -156,7 +161,7 @@
     }
 
     .first-container {
-      width: 50%;
+      width: 60%;
       margin-bottom: 1em;
     }
 
