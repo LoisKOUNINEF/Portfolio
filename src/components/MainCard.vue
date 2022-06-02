@@ -81,7 +81,6 @@
 
   a {
     text-decoration: none;
-    color: black;
   }
 
   .main-container {
@@ -93,15 +92,20 @@
   }
 
   .first-container {
-    background-color: ;
+    background-color: #0A47D3;
+    color: #BBCDF5;
     width: 30%;
     padding: 1em;
     border-radius: 1.5em;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
+  .first-container a {
+    color: #BBCDF5;
+  }
+
   .second-container {
-    background-color: ;
+    background: linear-gradient(#5B82DE, #849FDE);
     width: 70%;
     padding: 3em;
     border-radius: 1.5em;
@@ -139,6 +143,10 @@
 
   .project-button + .project-button {
     margin-left: 1em;
+  }
+
+  .project-button a {
+    color: black;
   }
 
   @media only screen and (max-width: 950px) {

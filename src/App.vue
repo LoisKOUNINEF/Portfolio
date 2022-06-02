@@ -20,7 +20,6 @@
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
   body {
     margin: 0;
-    background-color: #ccc;
   }
   #app {
     font-family: "Roboto", Helvetica, Avenir, Arial, sans-serif;
@@ -28,6 +27,6 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    background-color: #ccc;
+    background-color: #BBCDF5;
   }
 </style>
