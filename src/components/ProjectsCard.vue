@@ -6,8 +6,8 @@
         <img :src="projectData.ProjectsArray[index].Image" :alt="projectData.ProjectsArray[index].Title">
         <p>{{ projectData.ProjectsArray[index].About }}</p>
         <div class="links">
-          <a :href="projectData.ProjectsArray[index].GHLink" target="_blank"><img src="" alt="GitHub"></a>
-          <a :href="projectData.ProjectsArray[index].LiveLink" target="_blank"><img src="" alt="Live"></a>
+          <a :href="projectData.ProjectsArray[index].GHLink" target="_blank"><img src="../assets/logos/github.png" alt="GitHub"></a>
+          <a :href="projectData.ProjectsArray[index].LiveLink" target="_blank"><img src="../assets/logos/www.png" alt="Live"></a>
         </div>
       </div>
     </div>
@@ -40,7 +40,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     margin-bottom: 1em;
   }
 
@@ -50,7 +49,7 @@
     padding: 1em;
     flex-wrap: 0 0 40%;
     background-color: ;
-    border-radius: 15px;
+    border-radius: 1em;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
@@ -62,11 +61,12 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   .links img {
-    height: ;
-    margin: ;
+    height: 3em;
+    margin-top: 1em;
   }
 
   @media only screen and (max-width: 950px) {
