@@ -92,8 +92,8 @@
   }
 
   .first-container {
-    background-color: #0A47D3;
-    color: #BBCDF5;
+    background: linear-gradient(#00319C, #0050FF);
+    color: #fff;
     width: 30%;
     padding: 1em;
     border-radius: 1.5em;
