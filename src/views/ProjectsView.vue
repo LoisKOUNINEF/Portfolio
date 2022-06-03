@@ -9,7 +9,7 @@ import ProjectsCard from '@/components/ProjectsCard.vue'
 import MainCard from '@/components/MainCard.vue'
 
 export default {
-  name: 'ResumeView',
+  name: 'ProjectView',
   components: {
     MainCard,
     ProjectsCard
