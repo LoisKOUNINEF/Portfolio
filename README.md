@@ -1,6 +1,6 @@
 # portfolio
 
-## [Live version](https://loiskouninef.github.io/Portfolio/resume)
+## [Live version](https://loiskouninef.github.io/Portfolio)
 
 ## Project setup
 ```
