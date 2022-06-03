@@ -55,7 +55,7 @@
         </div>
         <div class="button-container">
           <div class="project-button">
-            <router-link to ="/">Mes projets</router-link>
+            <router-link to ="/projects">Mes projets</router-link>
           </div>
           <div class="project-button">
             <router-link to="/resume">Mon CV</router-link>
@@ -161,8 +161,9 @@
     }
 
     .first-container {
-      width: 60%;
+      width: 90%;
       margin-bottom: 1em;
+      height: 20em;
     }
 
     .second-container {
@@ -176,6 +177,24 @@
     .project-button + .project-button {
       margin-left: 0;
       margin-top: 1em;
+    }
+
+    .social-links {
+      display: inline-block;
+    }
+
+    .social-links + .social-links {
+      margin-left: 1.5em;
+    }
+
+    .profile img {
+      margin-top: 1rem;
+      height: 6rem;
+      border-radius: 50%;
+    }
+
+    .link img {
+      height: 2.5em;
     }
   }
 
