@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="button-container">
-            <div class="project-button">
+      <div class="project-button">
         <router-link to ="/">Retourner à l'accueil</router-link>
       </div>
       <div class="project-button">
@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="pdf-container">
-      <iframe class="pdf" src="Resume.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" frameborder="0" width="100%" height="100%" scrolling="auto"></iframe>
+      <iframe class="pdf" src="Resume.pdf#navpanes=0&scrollbar=0&view=fitH" type="application/pdf" frameborder="0" width="90%" height="100%" scrolling="auto"></iframe>
     </div>
   </div>
 </template>
@@ -27,7 +27,7 @@
   }
 
   .pdf-container {
-    height: 40em;
+    height: 50em;
   }
 
   .button-container {
@@ -52,8 +52,13 @@
   }
 
   @media only screen and (max-width: 900px) {
-    .pdf {
 
+    .pdf-container {
+      height: 30em;
+    }
+
+    .pdf {
+      width: 100%;
     }
   }
 </style>
