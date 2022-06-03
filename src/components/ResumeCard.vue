@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="pdf-container">
-      <iframe class="pdf" src="Resume.pdf#navpanes=0&scrollbar=0&view=fitH" type="application/pdf" frameborder="0" width="90%" height="100%" scrolling="auto"></iframe>
+      <iframe class="pdf" src="Resume.pdf#navpanes=0&scrollbar=0&view=fitH" type="application/pdf" frameborder="0" scrolling="auto"></iframe>
     </div>
   </div>
 </template>
@@ -28,6 +28,11 @@
 
   .pdf-container {
     height: 50em;
+  }
+
+  .pdf {
+    width: 90%;
+    height: 100%;
   }
 
   .button-container {
