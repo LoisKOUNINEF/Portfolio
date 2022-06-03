@@ -163,7 +163,7 @@
     .first-container {
       width: 90%;
       margin-bottom: 1em;
-      height: 20em;
+      height: 25em;
     }
 
     .second-container {
