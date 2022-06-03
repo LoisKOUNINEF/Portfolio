@@ -23,7 +23,7 @@
 <style scoped>
 
   .container {
-    background: linear-gradient( #849FDE, #5B82DE 15%);
+    background: linear-gradient( #849FDE, #5B82DE);
   }
 
   .pdf-container {

@@ -51,7 +51,7 @@
     margin: 1em;
     padding: 1em;
     flex-wrap: 0 0 40%;
-    background: linear-gradient(#5B82DE, #849FDE);
+    background: linear-gradient(to bottom right, #5B82DE, #849FDE);
     border-radius: 1em;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
