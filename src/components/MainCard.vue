@@ -55,10 +55,10 @@
         </div>
         <div class="button-container">
           <div class="project-button">
-            <a href="#project">Mes projets</a>
+            <router-link to ="/">Mes projets</router-link>
           </div>
           <div class="project-button">
-            <a href="">Mon CV</a>
+            <router-link to="/resume">Mon CV</router-link>
           </div>
         </div>
       </div>
