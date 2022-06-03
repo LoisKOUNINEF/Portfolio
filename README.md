@@ -1,5 +1,7 @@
 # portfolio
 
+## [Live version](https://loiskouninef.github.io/Portfolio/resume)
+
 ## Project setup
 ```
 npm install
