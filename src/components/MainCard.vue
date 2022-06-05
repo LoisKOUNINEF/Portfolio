@@ -78,17 +78,18 @@
 
 <style scoped>
 
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
   .wrapper {
     display: flex;
     justify-content: center;
+    padding: 40px;
   }
 
   a {
     text-decoration: none;
-  }
-
-  .wrapper {
-    padding: 40px;
   }
 
   @keyframes slideInTop {
@@ -191,7 +192,7 @@
 
   .button-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 4em;
   }
@@ -208,6 +209,10 @@
     margin-left: 1em;
   }
 
+  .project-button:hover {
+    opacity: .75;
+  }
+
   @media only screen and (max-width: 950px) {
     .main-container {
       width: 95%;
@@ -215,9 +220,10 @@
     }
 
     .first-container {
-      width: 90%;
+      width: 100%;
       margin-bottom: 1em;
-      height: 25em;
+      padding: .5em;
+      height: 23.5em;
       animation-duration: 2s;
       animation-timing-function: ease-in-out;
       animation-delay: 0s;
@@ -226,7 +232,12 @@
     }
 
     .second-container {
-      width: 70%;
+      width: 90%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+      padding: 1em;
+      padding-bottom: 2em;
       animation-duration: 2s;
       animation-timing-function: ease-in-out;
       animation-delay: 0s;
@@ -235,11 +246,12 @@
     }
 
     .button-container {
-      flex-wrap: wrap;
+      margin-top: 1em;
+      order: 1;
     }
 
     .project-button + .project-button {
-      margin-left: 0;
+      margin-left: 1em;
       margin-top: 1em;
     }
 

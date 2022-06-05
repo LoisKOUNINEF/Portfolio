@@ -14,6 +14,10 @@
 
 <style scoped>
 
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
   @keyframes slideInBot {
     0% {
       transform: translateY(100%);

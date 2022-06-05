@@ -28,6 +28,10 @@
 
 <style scoped>
 
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
   @keyframes slideInTop {
     0% {
       transform: translateY(-100%);
@@ -69,6 +73,10 @@
     font-weight: 600;
     margin-top: 1em;
     border-radius: 100px;
+  }
+
+  .button:hover {
+    opacity: .75;
   }
 
   .project {

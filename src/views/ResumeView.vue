@@ -1,5 +1,5 @@
 <template>
-<NavbarCard />
+  <NavbarCard />
   <ResumeCard />
 </template>
 
@@ -11,7 +11,7 @@ import NavbarCard from '@/components/NavbarCard.vue'
 export default {
   name: 'ResumeView',
   components: {
-NavbarCard,
+    NavbarCard,
     ResumeCard
   }
 }

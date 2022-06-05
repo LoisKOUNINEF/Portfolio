@@ -48,6 +48,10 @@
 
 <style scoped>
 
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
   @keyframes slideInLeft {
     0% {
       transform: translateX(-100%);
@@ -117,16 +121,13 @@
     opacity: 1;
   }
 
-
-
   @media only screen and (max-width: 900px) {
     .main-container {
-      width: 95%;
-      flex-wrap: wrap;
+      width: 100%;
     }
 
     .project-card {
-      width: 80%;
+      width: 90%;
     }
 
   }
