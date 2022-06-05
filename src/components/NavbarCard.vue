@@ -1,15 +1,21 @@
 <template>
   <div class="container">
     <div class="button-container">
-      <div class="button project">
-        <router-link to ="/projects">Mes projets</router-link>
-      </div>
-      <div class="button resume">
-        <router-link to="/resume">Mon CV</router-link>
-      </div>
-      <div class="button about">
-        <router-link to="/">A propos</router-link>
-      </div>
+      <router-link to ="/projects">
+        <div class="button project">
+          Mes projets
+        </div>
+      </router-link>
+      <router-link to="/resume">
+        <div class="button resume">
+          Mon CV
+        </div>
+      </router-link>
+      <router-link to="/">
+        <div class="button about">
+          A propos
+        </div>
+      </router-link>
     </div>
   </div>
 </template>
@@ -89,7 +95,7 @@
     animation-name: slideInRight;
   }
 
-  .button a {
+  a {
     text-decoration: none;
     color: #fff;
   }

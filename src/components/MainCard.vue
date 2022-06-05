@@ -54,12 +54,16 @@
           </div>
         </div>
         <div class="button-container">
-          <div class="project-button">
-            <router-link to ="/projects">Mes projets</router-link>
-          </div>
-          <div class="project-button">
-            <router-link to="/resume">Mon CV</router-link>
-          </div>
+          <router-link to ="/projects">
+            <div class="project-button">
+              Mes projets
+            </div>
+          </router-link>
+          <router-link to="/resume">
+            <div class="project-button">
+              Mon CV
+            </div>
+          </router-link>
         </div>
       </div>
     </div>
@@ -162,6 +166,10 @@
     animation-name: slideInBot;
   }
 
+  .second-container a {
+    color: #fff;
+  }
+
   .profile img {
     margin-top: 1rem;
     height: 8rem;
@@ -199,11 +207,6 @@
   .project-button + .project-button {
     margin-left: 1em;
   }
-
-  .project-button a {
-    color: #fff;
-  }
-
 
   @media only screen and (max-width: 950px) {
     .main-container {
