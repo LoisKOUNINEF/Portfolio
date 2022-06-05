@@ -1,17 +1,17 @@
 <template>
-  <MainCard />
+  <NavbarCard />
   <ProjectsCard />
 </template>
 
 <script>
 
 import ProjectsCard from '@/components/ProjectsCard.vue'
-import MainCard from '@/components/MainCard.vue'
+import NavbarCard from '@/components/NavbarCard.vue'
 
 export default {
   name: 'ProjectView',
   components: {
-    MainCard,
+    NavbarCard,
     ProjectsCard
   }
 }

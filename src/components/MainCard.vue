@@ -83,6 +83,28 @@
     text-decoration: none;
   }
 
+  .wrapper {
+    padding: 40px;
+  }
+
+  @keyframes slideInTop {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInBot {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
   .main-container {
     display: flex;
     justify-content: center;
@@ -98,6 +120,11 @@
     padding: 1em;
     border-radius: 1.5em;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInTop;
   }
 
   .first-container a {
@@ -110,6 +137,11 @@
     padding: 3em;
     border-radius: 1.5em;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInBot;
   }
 
   .profile img {
@@ -153,6 +185,7 @@
   .project-button a {
     color: #fff;
   }
+
 
   @media only screen and (max-width: 950px) {
     .main-container {

@@ -1,7 +1,12 @@
 <template>
   <div class="container">
-    <div class="pdf-container">
-      <iframe class="pdf" src="resume.pdf#navpanes=0&scrollbar=0&view=fitH" type="application/pdf" frameborder="0" scrolling="auto"></iframe>
+    <div class="button-container">
+      <div class="project-button">
+        <router-link to ="/projects">Mes projets</router-link>
+      </div>
+      <div class="project-button">
+        <router-link to="/resume">Mon CV</router-link>
+      </div>
     </div>
   </div>
 </template>
@@ -14,32 +19,9 @@
 
 <style scoped>
 
-  .pdf-container {
-    height: 50em;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-name: slideInBot;
-  }
-
-  .pdf {
-    width: 80%;
-    height: 100%;
-  }
-
   @keyframes slideInTop {
     0% {
       transform: translateY(-100%);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes slideInBot {
-    0% {
-      transform: translateY(100%);
     }
     100% {
       transform: translateY(0);
@@ -58,7 +40,6 @@
     animation-iteration-count: 1;
     animation-name: slideInTop;
   }
-
   .project-button {
     background: linear-gradient(30deg, #00319C, #0050FF);
     padding: 1em;
@@ -70,16 +51,5 @@
   .project-button a {
     text-decoration: none;
     color: #fff;
-  }
-
-  @media only screen and (max-width: 900px) {
-
-    .pdf-container {
-      height: 30em;
-    }
-
-    .pdf {
-      width: 100%;
-    }
   }
 </style>

@@ -17,6 +17,7 @@
 </template>
 
 <script>
+
   function reveal() {
     var reveals = document.querySelectorAll(".reveal");
 
@@ -24,7 +25,6 @@
       var windowHeight = window.innerHeight;
       var elementTop = reveals[i].getBoundingClientRect().top;
       var elementVisible = 100;
-
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
       } else {
@@ -43,9 +43,19 @@
       }
     }
   }
+
 </script>
 
 <style scoped>
+
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 
   .wrapper {
     display: flex;
@@ -62,6 +72,11 @@
     width: 90%;
     justify-content: center;
     margin-bottom: 1em;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInLeft;
   }
 
   .project-card {
@@ -101,6 +116,8 @@
     transform: translateY(0);
     opacity: 1;
   }
+
+
 
   @media only screen and (max-width: 900px) {
     .main-container {
