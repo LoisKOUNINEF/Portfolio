@@ -1,14 +1,14 @@
 <template>
   <div class="container">
     <div class="button-container">
-      <div class="button">
+      <div class="button project">
         <router-link to ="/projects">Mes projets</router-link>
       </div>
-      <div class="button">
-        <router-link to="/">A propos</router-link>
-      </div>
-      <div class="button">
+      <div class="button resume">
         <router-link to="/resume">Mon CV</router-link>
+      </div>
+      <div class="button about">
+        <router-link to="/">A propos</router-link>
       </div>
     </div>
   </div>
@@ -31,17 +31,30 @@
     }
   }
 
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
   .button-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding-top: 4em;
     margin-bottom: 3em;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-name: slideInTop;
   }
 
   .button {
@@ -52,8 +65,33 @@
     border-radius: 100px;
   }
 
+  .project {
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInLeft;
+  }
+
+  .resume {
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInTop;
+  }
+
+  .about {
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInRight;
+  }
+
   .button a {
     text-decoration: none;
     color: #fff;
   }
+
 </style>

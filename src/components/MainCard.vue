@@ -105,6 +105,24 @@
     }
   }
 
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
   .main-container {
     display: flex;
     justify-content: center;
@@ -197,10 +215,20 @@
       width: 90%;
       margin-bottom: 1em;
       height: 25em;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+      animation-delay: 0s;
+      animation-iteration-count: 1;
+      animation-name: slideInLeft;
     }
 
     .second-container {
       width: 70%;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+      animation-delay: 0s;
+      animation-iteration-count: 1;
+      animation-name: slideInRight;
     }
 
     .button-container {
