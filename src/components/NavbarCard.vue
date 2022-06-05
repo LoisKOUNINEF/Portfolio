@@ -1,10 +1,13 @@
 <template>
   <div class="container">
     <div class="button-container">
-      <div class="project-button">
+      <div class="button">
         <router-link to ="/projects">Mes projets</router-link>
       </div>
-      <div class="project-button">
+      <div class="button">
+        <router-link to="/">A propos</router-link>
+      </div>
+      <div class="button">
         <router-link to="/resume">Mon CV</router-link>
       </div>
     </div>
@@ -34,13 +37,14 @@
     align-items: center;
     padding-top: 4em;
     margin-bottom: 3em;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-name: slideInTop;
   }
-  .project-button {
+
+  .button {
     background: linear-gradient(30deg, #00319C, #0050FF);
     padding: 1em;
     font-weight: 600;
@@ -48,7 +52,7 @@
     border-radius: 100px;
   }
 
-  .project-button a {
+  .button a {
     text-decoration: none;
     color: #fff;
   }
