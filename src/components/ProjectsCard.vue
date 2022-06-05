@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <div class="main-container" id="project">
-      <div class="project-card" v-for="(items, index) in projectData.ProjectsArray" v-bind:key="items">
+      <div class="project-card reveal active" v-for="(items, index) in projectData.ProjectsArray" v-bind:key="items">
         <div class="about">
           <h2> {{ projectData.ProjectsArray[index].Title }} </h2>
           <img :src="projectData.ProjectsArray[index].Image" :alt="projectData.ProjectsArray[index].Title">
@@ -17,6 +17,24 @@
 </template>
 
 <script>
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 100;
+
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+
+  window.addEventListener("scroll", reveal);
+
   import jsonData from "/projects.json"
   export default {
     data() {
@@ -70,6 +88,18 @@
   .links img {
     height: 3em;
     margin-top: 1em;
+  }
+
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
   }
 
   @media only screen and (max-width: 900px) {
