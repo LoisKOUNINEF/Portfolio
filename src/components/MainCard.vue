@@ -35,7 +35,9 @@
       <div class="second-container">
         <div class="about-me">
           <h2>A Propos</h2>
-          <p>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Totam ratione dolore itaque ad id nobis nam esse alias a, error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eum? Ipsam iure similique esse dignissimos rerum quia sed, debitis sint Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quasi deserunt est id asperiores repudiandae Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Provident iusto quaerat voluptates tenetur pariatur? Consequuntur non, facilis voluptates. Sequi, nisi.</p>
+          <p>
+          <router-link to="/resume">Mon CV</router-link>
+          Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Totam ratione dolore itaque ad id nobis nam esse alias a, error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eum? Ipsam iure similique esse dignissimos rerum quia sed, debitis sint Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quasi deserunt est id asperiores repudiandae Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Provident iusto quaerat voluptates tenetur pariatur? Consequuntur non, facilis voluptates. Sequi, nisi.</p>
         </div>
         <div class="technologies">
           <h2>Technologies</h2>
@@ -56,12 +58,7 @@
         <div class="button-container">
           <router-link to="/projects">
             <div class="project-button">
-              Mes projets
-            </div>
-          </router-link>
-          <router-link to="/resume">
-            <div class="project-button">
-              Mon CV
+              Browse Portfolio
             </div>
           </router-link>
         </div>
@@ -165,12 +162,8 @@
     background: linear-gradient(30deg, #00319C, #0050FF);
     padding: 1em;
     font-weight: 600;
-    margin-top: 1em;
+    margin-top: 2em;
     border-radius: 100px;
-  }
-
-  .project-button + .project-button {
-    margin-left: 1em;
   }
 
   .project-button:hover {
@@ -213,11 +206,6 @@
     .button-container {
       margin-top: 1em;
       order: 1;
-    }
-
-    .project-button + .project-button {
-      margin-left: 1em;
-      margin-top: 1em;
     }
 
     .social-links {
