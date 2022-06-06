@@ -52,15 +52,6 @@
     box-sizing: border-box;
   }
 
-  @keyframes slideInLeft {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-
   .wrapper {
     display: flex;
     justify-content: center;

@@ -54,7 +54,7 @@
           </div>
         </div>
         <div class="button-container">
-          <router-link to ="/projects">
+          <router-link to="/projects">
             <div class="project-button">
               Mes projets
             </div>
@@ -92,7 +92,7 @@
     text-decoration: none;
   }
 
-  @keyframes slideInTop {
+/*  @keyframes slideInTop {
     0% {
       transform: translateY(-100%);
     }
@@ -126,7 +126,7 @@
     100% {
       transform: translateX(0);
     }
-  }
+  }*/
 
   .main-container {
     display: flex;
@@ -181,8 +181,8 @@
     height: 4em;
   }
 
-  .technologies {
-    margin-top: 3em;
+  .technologies, .about {
+    margin-top: 2em;
   }
 
   .logos img {
@@ -194,7 +194,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 4em;
+    margin-top: 2em;
   }
 
   .project-button {

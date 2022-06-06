@@ -18,15 +18,6 @@
     box-sizing: border-box;
   }
 
-  @keyframes slideInBot {
-    0% {
-      transform: translateY(100%);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-
   .pdf-container {
     height: 50em;
     animation-duration: 2s;

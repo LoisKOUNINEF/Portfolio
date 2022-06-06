@@ -32,33 +32,6 @@
     box-sizing: border-box;
   }
 
-  @keyframes slideInTop {
-    0% {
-      transform: translateY(-100%);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes slideInRight {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-
-  @keyframes slideInLeft {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-
   .button-container {
     display: flex;
     justify-content: space-evenly;
