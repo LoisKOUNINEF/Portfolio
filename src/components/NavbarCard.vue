@@ -50,6 +50,7 @@
 
   .button:hover {
     opacity: .75;
+    cursor: pointer;
   }
 
   .project {

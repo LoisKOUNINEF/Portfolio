@@ -95,6 +95,10 @@
     flex-wrap: wrap;
   }
 
+  .links img:hover {
+    cursor: pointer;
+  }
+
   .links img {
     height: 3em;
     margin-top: 1em;

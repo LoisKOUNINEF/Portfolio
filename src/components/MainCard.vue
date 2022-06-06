@@ -175,6 +175,7 @@
 
   .project-button:hover {
     opacity: .75;
+    cursor: pointer;
   }
 
   @media only screen and (max-width: 950px) {
