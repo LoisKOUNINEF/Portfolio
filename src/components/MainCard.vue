@@ -10,7 +10,7 @@
         <div class="social-links">
           <div class="link">
             <a href="https://github.com/LoisKOUNINEF" target="_blank">
-              <img src="../assets/logos/github.png" alt="github">
+              <img src="../assets/logos/github.png" alt="github" class="blackimg">
               <h3>GitHub</h3>
             </a>
           </div>
@@ -26,7 +26,7 @@
         <div class="social-links">
           <div class="link">
             <a href="https://medium.com/@lkouninef" target="_blank">
-              <img src="../assets/logos/medium.png" alt="">
+              <img src="../assets/logos/medium.png" alt="medium" class="blackimg">
               <h3>Medium</h3>
             </a>
           </div>
@@ -43,12 +43,12 @@
           <h2>Technologies</h2>
           <div class="logos">
             <img src="../assets/logos/git.png" alt="git" width="40%" height="40">
-            <img src="../assets/logos/github.png" alt="github">
+            <img src="../assets/logos/github.png" alt="github" class="blackimg">
             <img src="../assets/logos/heroku.png" alt="heroku">
             <img src="../assets/logos/html5.png" alt="html5">
             <img src="../assets/logos/css3.png" alt="css3">
             <img src="../assets/logos/javascript.png" alt="javascript">
-            <img src="../assets/logos/react.png" alt="react">
+            <img src="../assets/logos/react.png" alt="react" class="blackimg">
             <img src="../assets/logos/vue.png" alt="vue">
             <img src="../assets/logos/ruby.png" alt="ruby">
             <img src="../assets/logos/rails.png" alt="rails">
@@ -98,8 +98,10 @@
   }
 
   .first-container {
-    background: linear-gradient(to bottom right, #00319C 40%, #0050FF);
-    color: #fff;
+/*    background: linear-gradient(to bottom right, #00319C 40%, #0050FF);
+    color: #fff;*/
+        background-color: var(--background-color);
+    color: var(--text-color);
     width: 30%;
     padding: 1em;
     border-radius: 1.5em;
@@ -116,8 +118,10 @@
   }
 
   .second-container {
-    background: linear-gradient(#849FDE 65%, #5B82DE);
-    width: 70%;
+/*    background: linear-gradient(#849FDE 65%, #5B82DE);
+    width: 70%;*/
+        background-color: var(--background-color);
+    color: var(--text-color);
     padding: 3em;
     border-radius: 1.5em;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -149,6 +153,11 @@
   .logos img {
     height: 3em;
     width: 3em;
+  }
+
+  .blackimg {
+    background-color: white;
+    border-radius: 6rem;
   }
 
   .button-container {

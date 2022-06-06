@@ -1,8 +1,22 @@
 <template>
-  <router-view/>
+
+    <router-view/>
+
 </template>
 
 <style>
+
+  :root {
+    --background-color: white;
+    --text-color: black;
+    /*--app-background-color: ;*/
+  }
+
+  [data-theme="darkMode"] {
+    --background-color: black;
+    --text-color: white;
+    /*--app-background-color: ;*/
+  }
 
   body {
     margin: 0;
@@ -13,8 +27,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #111213;
-    background-color: #BBCDF5;
+    background-color: var(--text-color); /*var(--app-background-color);*/
   }
 
   @keyframes slideInTop {

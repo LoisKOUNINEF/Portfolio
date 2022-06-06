@@ -79,56 +79,60 @@
     margin: 1em;
     padding: 1em;
     flex-wrap: 0 0 40%;
-    background: linear-gradient(to bottom right, #5B82DE, #849FDE);
-    border-radius: 1em;
+    background-color: var(--background-color);
+    color: var(--text-color);
+   /* background: linear-gradient(to bottom right, #5B82DE, #849FDE);
+    border-radius: 1em;*/
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
-.project-card:hover {
-  background: linear-gradient(to bottom right, #00319C 40%, #0050FF);
+  .project-card:hover {
+   background-color: var(--text-color);
+   color: var(--background-color);
+ }
+
+ .about img {
+  height: 10rem;
 }
 
-  .about img {
-    height: 10rem;
+.links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.links img:hover {
+  cursor: pointer;
+}
+
+.links img {
+  height: 3em;
+  margin-top: 1em;
+  background-color: white;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@media only screen and (max-width: 900px) {
+  .main-container {
+    width: 100%;
   }
 
-  .links {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+  .project-card {
+    width: 90%;
   }
 
-  .links img:hover {
-    cursor: pointer;
-  }
-
-  .links img {
-    height: 3em;
-    margin-top: 1em;
-  }
-
-  .reveal{
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 1s all ease;
-  }
-
-  .reveal.active{
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-  @media only screen and (max-width: 900px) {
-    .main-container {
-      width: 100%;
-    }
-
-    .project-card {
-      width: 90%;
-    }
-
-  }
+}
 
 </style>
