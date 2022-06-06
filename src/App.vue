@@ -12,12 +12,6 @@
     /*--app-background-color: ;*/
   }
 
-  [data-theme="darkMode"] {
-    --background-color: black;
-    --text-color: white;
-    /*--app-background-color: ;*/
-  }
-
   body {
     margin: 0;
   }
