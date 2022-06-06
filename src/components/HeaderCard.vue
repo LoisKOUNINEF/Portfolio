@@ -1,31 +1,33 @@
 <template>
-<div class="container">
-    <button id="toggle" @click="darkThemeSwitch" aria-label="Toggle themes">
+  <div class="container">
+    <div class="button-container">
+      <button id="toggle" @click="darkThemeSwitch" aria-label="Toggle themes">
 
-      <span> Switch Theme</span>
-    </button>
-</div>
+        <span> Switch Theme</span>
+      </button>
+    </div>
+  </div>
 </template>
 
 <script>
-import themeChanger from "../theme.js";
+  import themeChanger from "../theme.js";
   export default {
 
-  data() {
-    return {
-      themeChanger: null,
-    };
-  },
-
-  methods: {
-    darkThemeSwitch() {
-      this.themeChanger._darkThemeSwitch();
+    data() {
+      return {
+        themeChanger: null,
+      };
     },
-  },
 
-  created() {
-    this.themeChanger = new themeChanger();
-  },
+    methods: {
+      darkThemeSwitch() {
+        this.themeChanger._darkThemeSwitch();
+      },
+    },
+
+    created() {
+      this.themeChanger = new themeChanger();
+    },
 
   }
 </script>
@@ -34,6 +36,29 @@ import themeChanger from "../theme.js";
 
   *, *::before, *::after {
     box-sizing: border-box;
+  }
+
+  .container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .button-container {
+    margin-right: 1em;
+    margin-top: 1em;
+  }
+
+  button {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 1em;
+    font-weight: 600;
+    border-radius: 100px;
+  }
+
+  button:hover {
+    opacity: .75;
+    cursor: pointer;
   }
 
 </style>
