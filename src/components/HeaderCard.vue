@@ -46,9 +46,16 @@
   .button-container {
     margin-right: 1em;
     margin-top: 1em;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInRight;
   }
 
   button {
+    display: flex;
+    align-items: center;
     background-color: var(--background-color);
     color: var(--text-color);
     padding: 1em;
@@ -60,5 +67,6 @@
     opacity: .75;
     cursor: pointer;
   }
+
 
 </style>

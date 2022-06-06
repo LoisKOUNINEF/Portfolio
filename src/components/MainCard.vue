@@ -36,7 +36,7 @@
         <div class="about-me">
           <h2>A Propos</h2>
           <p>
-          <router-link to="/resume">Mon CV</router-link>
+            <router-link to="/resume">Mon CV</router-link>
           Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Totam ratione dolore itaque ad id nobis nam esse alias a, error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eum? Ipsam iure similique esse dignissimos rerum quia sed, debitis sint Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quasi deserunt est id asperiores repudiandae Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Provident iusto quaerat voluptates tenetur pariatur? Consequuntur non, facilis voluptates. Sequi, nisi.</p>
         </div>
         <div class="technologies">
@@ -100,7 +100,7 @@
   .first-container {
 /*    background: linear-gradient(to bottom right, #00319C 40%, #0050FF);
     color: #fff;*/
-        background-color: var(--background-color);
+    background-color: var(--background-color);
     color: var(--text-color);
     width: 30%;
     padding: 1em;
@@ -114,13 +114,13 @@
   }
 
   .first-container a {
-    color: #BBCDF5;
+    color: var(--text-color);
   }
 
   .second-container {
 /*    background: linear-gradient(#849FDE 65%, #5B82DE);
     width: 70%;*/
-        background-color: var(--background-color);
+    background-color: var(--background-color);
     color: var(--text-color);
     padding: 3em;
     border-radius: 1.5em;
@@ -130,10 +130,6 @@
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-name: slideInBot;
-  }
-
-  .second-container a {
-    color: #fff;
   }
 
   .profile img {
@@ -168,7 +164,8 @@
   }
 
   .project-button {
-    background: linear-gradient(30deg, #00319C, #0050FF);
+    background-color: var(--text-color);
+    color: var(--background-color);
     padding: 1em;
     font-weight: 600;
     margin-top: 2em;

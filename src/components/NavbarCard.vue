@@ -41,7 +41,8 @@
   }
 
   .button {
-    background: linear-gradient(30deg, #00319C, #0050FF);
+    background-color: var(--background-color);
+    color: var(--text-color);
     padding: 1em;
     font-weight: 600;
     margin-top: 1em;
