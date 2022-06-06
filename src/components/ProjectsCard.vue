@@ -84,6 +84,10 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
+.project-card:hover {
+  background: linear-gradient(to bottom right, #00319C 40%, #0050FF);
+}
+
   .about img {
     height: 10rem;
   }
