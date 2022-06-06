@@ -71,7 +71,7 @@
     animation-timing-function: ease-in-out;
     animation-delay: 0s;
     animation-iteration-count: 1;
-    animation-name: fadeInBase;
+    animation-name: slideInLeftBase;
   }
 
   .project-card {

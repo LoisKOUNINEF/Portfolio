@@ -65,12 +65,21 @@
     }
   }
 
-  @keyframes fadeInBase {
+  @keyframes slideInBotBase {
     0% {
-      transform: scale(.5);
+      transform: translateY(100%);
     }
     100% {
-      transform: scale(1);
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInLeftBase {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
     }
   }
 
