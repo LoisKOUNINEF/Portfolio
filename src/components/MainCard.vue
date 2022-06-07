@@ -138,6 +138,7 @@
 
   a {
     color: var(--text-color);
+    transition: var(--transition);
   }
 
   .second-container {
