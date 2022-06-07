@@ -90,7 +90,6 @@
   .project-card:hover {
    background-color: var(--text-color);
    color: var(--background-color);
-   width: 50%;
  }
 
  .about img {
