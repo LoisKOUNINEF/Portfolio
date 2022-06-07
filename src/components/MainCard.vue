@@ -39,6 +39,11 @@
             <router-link to="/resume"><strong>Mon CV</strong></router-link>
           Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Totam ratione dolore itaque ad id nobis nam esse alias a, error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eum? Ipsam iure similique esse dignissimos rerum quia sed, debitis sint Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quasi deserunt est id asperiores repudiandae Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Provident iusto quaerat voluptates tenetur pariatur? Consequuntur non, facilis voluptates. Sequi, nisi.</p>
         </div>
+        <div class="button-container toggle">
+          <button @click="darkThemeSwitch" aria-label="Toggle themes">
+            <span> Switch Theme</span>
+          </button>
+        </div>
         <div class="technologies">
           <h2>Technologies</h2>
           <div class="logos">
@@ -57,7 +62,7 @@
         </div>
         <div class="button-container">
           <router-link to="/projects">
-            <div class="project-button">
+            <div class="button">
               Browse Portfolio
             </div>
           </router-link>
@@ -68,9 +73,27 @@
 </template>
 
 <script>
+  import themeChanger from "../theme.js";
   export default {
 
+    data() {
+      return {
+        themeChanger: null,
+      };
+    },
+
+    methods: {
+      darkThemeSwitch() {
+        this.themeChanger._darkThemeSwitch();
+      },
+    },
+
+    created() {
+      this.themeChanger = new themeChanger();
+    },
+
   }
+
 </script>
 
 <style scoped>
@@ -98,8 +121,6 @@
   }
 
   .first-container {
-/*    background: linear-gradient(to bottom right, #00319C 40%, #0050FF);
-    color: #fff;*/
     background-color: var(--background-color);
     color: var(--text-color);
     width: 30%;
@@ -119,8 +140,7 @@
   }
 
   .second-container {
-/*    background: linear-gradient(#849FDE 65%, #5B82DE);
-    width: 70%;*/
+    width: 70%;
     background-color: var(--background-color);
     color: var(--text-color);
     padding: 3em;
@@ -165,7 +185,7 @@
     margin-top: 2em;
   }
 
-  .project-button {
+  .button {
     background-color: var(--text-color);
     color: var(--background-color);
     padding: 1em;
@@ -176,9 +196,30 @@
     box-shadow: var(--box-shadow-dark);
   }
 
-  .project-button:hover {
+  button
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--background-color);
     color: var(--text-color);
+    margin-left: 1em;
+    font-weight: 600;
+    border-radius: 6em;
+    transition: var(--transition);
+    box-shadow: var(--box-shadow-light);
+    padding: .5em;
+  }
+
+  .button:hover {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
     cursor: pointer;
   }
 
