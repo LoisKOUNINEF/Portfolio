@@ -65,7 +65,8 @@
     display: flex;
     flex-wrap: wrap;
     width: 90%;
-    justify-content: center;
+    justify-content: space-evenly;
+    padding-top: 5em;
     margin-bottom: 1em;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
@@ -81,8 +82,7 @@
     flex-wrap: 0 0 40%;
     background-color: var(--background-color);
     color: var(--text-color);
-   /* background: linear-gradient(to bottom right, #5B82DE, #849FDE);
-    border-radius: 1em;*/
+    border-radius: 1em;
     box-shadow: var(--box-shadow-light);
     transition: 1s all ease;
   }
@@ -90,6 +90,9 @@
   .project-card:hover {
    background-color: var(--text-color);
    color: var(--background-color);
+   width: 45%;
+   padding-left: 3em;
+   padding-right: 3em;
  }
 
  .about img {
@@ -115,7 +118,7 @@
 
 .reveal{
   position: relative;
-  transform: translateY(150px);
+  transform: translateY(100px);
   opacity: 0;
 }
 
