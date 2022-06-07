@@ -62,10 +62,12 @@
     font-weight: 600;
     border-radius: 100px;
     transition: var(--transition);
+    box-shadow: var(--box-shadow-light);
   }
 
   button:hover {
-    opacity: .75;
+    background-color: var(--text-color);
+    color: var(--background-color);
     cursor: pointer;
   }
 

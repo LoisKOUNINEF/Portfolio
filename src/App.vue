@@ -11,7 +11,8 @@
     --text-color: black;
      /*--app-background-color: ;*/
     --transition: 1s all ease;
-    --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    --box-shadow-dark: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    --box-shadow-light: rgba(255, 255, 255, 0.5) 0px 3px 8px;
   }
 
   body {

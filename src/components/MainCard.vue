@@ -173,10 +173,12 @@
     margin-top: 2em;
     border-radius: 100px;
     transition: var(--transition);
+    box-shadow: var(--box-shadow-dark);
   }
 
   .project-button:hover {
-    opacity: .75;
+    background-color: var(--background-color);
+    color: var(--text-color);
     cursor: pointer;
   }
 

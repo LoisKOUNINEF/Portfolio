@@ -2,5 +2,6 @@
   --background-color: black;
   --text-color: white;
   /*--app-background-color: ;*/
-  --box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+  --box-shadow-dark: rgba(255, 255, 255, 0.5) 0px 3px 8px;
+  --box-shadow-light: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }

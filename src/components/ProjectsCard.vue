@@ -83,12 +83,14 @@
     color: var(--text-color);
    /* background: linear-gradient(to bottom right, #5B82DE, #849FDE);
     border-radius: 1em;*/
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow-light);
+    transition: 1s all ease;
   }
 
   .project-card:hover {
    background-color: var(--text-color);
    color: var(--background-color);
+   width: 50%;
  }
 
  .about img {
@@ -116,7 +118,6 @@
   position: relative;
   transform: translateY(150px);
   opacity: 0;
-  transition: 1s all ease;
 }
 
 .reveal.active{
@@ -132,6 +133,10 @@
   .project-card {
     width: 90%;
   }
+
+  .project-card:hover {
+   width: 90%;
+ }
 
 }
 
