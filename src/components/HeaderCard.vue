@@ -81,6 +81,8 @@
   button {
     height: 50%;
     width: 50%;
+    background-color: var(--text-color);
+    color: var(--background-color);
     padding-top: 2em;
     padding-bottom: 2em;
   }
@@ -101,9 +103,15 @@
     animation-name: slideInLeft;
   }
 
-  .button:hover, button:hover {
+  .button:hover {
     background-color: var(--text-color);
     color: var(--background-color);
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: var(--background-color);
+    color: var(--text-color);
     cursor: pointer;
   }
 
