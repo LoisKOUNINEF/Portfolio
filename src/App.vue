@@ -9,7 +9,9 @@
   :root {
     --background-color: white;
     --text-color: black;
-    /*--app-background-color: ;*/
+     /*--app-background-color: ;*/
+    --transition: 1s all ease;
+    --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
   body {
@@ -22,6 +24,7 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     background-color: var(--text-color); /*var(--app-background-color);*/
+    transition: var(--transition);
   }
 
   @keyframes slideInTop {

@@ -47,6 +47,7 @@
     font-weight: 600;
     margin-top: 1em;
     border-radius: 100px;
+    transition: var(--transition);
   }
 
   .button:hover {

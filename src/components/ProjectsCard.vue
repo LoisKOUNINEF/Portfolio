@@ -83,7 +83,7 @@
     color: var(--text-color);
    /* background: linear-gradient(to bottom right, #5B82DE, #849FDE);
     border-radius: 1em;*/
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: var(--box-shadow);
   }
 
   .project-card:hover {

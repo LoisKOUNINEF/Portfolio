@@ -61,6 +61,7 @@
     padding: 1em;
     font-weight: 600;
     border-radius: 100px;
+    transition: var(--transition);
   }
 
   button:hover {

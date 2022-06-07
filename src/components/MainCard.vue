@@ -36,7 +36,7 @@
         <div class="about-me">
           <h2>A Propos</h2>
           <p>
-            <router-link to="/resume">Mon CV</router-link>
+            <router-link to="/resume"><strong>Mon CV</strong></router-link>
           Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Totam ratione dolore itaque ad id nobis nam esse alias a, error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eum? Ipsam iure similique esse dignissimos rerum quia sed, debitis sint Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quasi deserunt est id asperiores repudiandae Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Provident iusto quaerat voluptates tenetur pariatur? Consequuntur non, facilis voluptates. Sequi, nisi.</p>
         </div>
         <div class="technologies">
@@ -111,9 +111,10 @@
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-name: slideInTop;
+    transition: var(--transition);
   }
 
-  .first-container a {
+  a {
     color: var(--text-color);
   }
 
@@ -130,6 +131,7 @@
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-name: slideInBot;
+    transition: var(--transition);
   }
 
   .profile img {
@@ -170,6 +172,7 @@
     font-weight: 600;
     margin-top: 2em;
     border-radius: 100px;
+    transition: var(--transition);
   }
 
   .project-button:hover {
