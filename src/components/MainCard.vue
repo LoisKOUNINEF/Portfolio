@@ -109,10 +109,6 @@
     padding: 40px;
   }
 
-  a {
-    text-decoration: none;
-  }
-
   .main-container {
     display: flex;
     justify-content: center;
@@ -137,6 +133,7 @@
   }
 
   a {
+    text-decoration: none;
     color: var(--text-color);
     transition: var(--transition);
   }
