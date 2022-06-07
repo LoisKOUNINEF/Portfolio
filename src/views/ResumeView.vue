@@ -1,17 +1,17 @@
 <template>
-  <NavbarCard />
+  <HeaderCard />
   <ResumeCard />
 </template>
 
 <script>
 
 import ResumeCard from '@/components/ResumeCard.vue'
-import NavbarCard from '@/components/NavbarCard.vue'
+import HeaderCard from '@/components/HeaderCard.vue'
 
 export default {
   name: 'ResumeView',
   components: {
-    NavbarCard,
+    HeaderCard,
     ResumeCard
   }
 }
