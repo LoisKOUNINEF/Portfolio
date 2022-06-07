@@ -18,7 +18,7 @@
       </router-link>
     </div>
     <div class="button-container toggle">
-      <button id="toggle" @click="darkThemeSwitch" aria-label="Toggle themes">
+      <button @click="darkThemeSwitch" aria-label="Toggle themes">
 
         <span> Switch Theme</span>
       </button>
@@ -71,16 +71,16 @@
     align-items: center;
     background-color: var(--background-color);
     color: var(--text-color);
-    height: 50%;
     padding: .75em;
     margin-left: 1em;
     font-weight: 600;
-    border-radius: 100px;
+    border-radius: 6em;
     transition: var(--transition);
     box-shadow: var(--box-shadow-light);
   }
 
   button {
+    height: 50%;
     width: 50%;
     padding-top: 2em;
     padding-bottom: 2em;
