@@ -1,7 +1,5 @@
 export default class themeChanger {
-    /**
-     // * @constructor
-     */
+
     constructor() {}
     _addDarkTheme() {
         const darkThemeLinkEl = document.createElement('link')
@@ -26,9 +24,6 @@ export default class themeChanger {
     }
 }
 
-// let localTheme = localStorage.getItem('theme');
-//     //   document.documentElement.setAttribute('data-theme', localTheme);
-
-// this.theme = this.theme == 'darkMode' ? '' : 'darkMode';
-//     //   document.documentElement.setAttribute('data-theme', this.theme);
-//     //   localStorage.setItem('theme', this.theme);
+        // localStorage.setItem('theme', 'dark-theme-style')
+        // let localTheme = localStorage.getItem('theme');
+        // document..setAttribute('id', localTheme);
