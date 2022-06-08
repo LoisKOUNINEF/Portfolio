@@ -114,6 +114,7 @@
   height: 3em;
   margin-top: 1em;
   background-color: white;
+  border-radius: 50%;
 }
 
 .reveal{
