@@ -115,6 +115,7 @@
   margin-top: 1em;
   background-color: white;
   border-radius: 50%;
+  border: 1px solid black;
 }
 
 .reveal{
