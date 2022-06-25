@@ -13,6 +13,8 @@
     --transition: 1s all ease;
     --box-shadow-dark: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     --box-shadow-light: rgba(255, 255, 255, 0.5) 0px 3px 8px;
+    background-color: var(--text-color);
+    transition: var(--transition);
   }
 
   body {
@@ -24,8 +26,6 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    background-color: var(--text-color); /*var(--app-background-color);*/
-    transition: var(--transition);
   }
 
   @keyframes slideInTop {
