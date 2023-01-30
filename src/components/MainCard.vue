@@ -36,13 +36,14 @@
         <div class="about-me">
           <h2>A Propos</h2>
           <p>
-            <router-link to="/resume"><strong>Mon CV</strong></router-link>
-            <router-link to="/projects"><strong>Browse Portfolio</strong></router-link>
-          Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Totam ratione dolore itaque ad id nobis nam esse alias a, error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eum? Ipsam iure similique esse dignissimos rerum quia sed, debitis sint Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quasi deserunt est id asperiores repudiandae Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Provident iusto quaerat voluptates tenetur pariatur? Consequuntur non, facilis voluptates. Sequi, nisi.</p>
+          En reconversion professionnelle après une quinzaine d'années dans le domaine de l'hôtellerie-restauration, je me suis découvert une passion pour la programmation informatique en général et le développement d'applications web en particulier. J'ai une appétence certaine pour les principes de Clean Code, et ai à cœur de produire un code de qualité, lisible et maintenable autant que fonctionnel. 
+          <br/>
+          Vous pouvez consulter <router-link to="/resume"><strong>Mon CV</strong></router-link>, ou découvrir quelques-uns de 
+          <router-link to="/projects"><strong>mes projets.</strong></router-link></p>
         </div>
         <div class="button-container toggle">
           <button @click="darkThemeSwitch" aria-label="Toggle themes">
-            <span> Switch Theme</span>
+            <span>Changer de thème</span>
           </button>
         </div>
         <div class="technologies">
@@ -110,6 +111,8 @@
   }
 
   .main-container {
+    background-color: var(--background-color);
+    color: var(--text-color);
     display: flex;
     justify-content: center;
     width: 60%;
@@ -214,7 +217,6 @@
     background-color: var(--background-color);
     color: var(--text-color);
     cursor: pointer;
-    font-size: 1.1rem;
     border: 1px solid black;
   }
 
