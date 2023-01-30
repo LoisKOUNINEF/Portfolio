@@ -65,7 +65,7 @@
         <div class="button-container">
           <router-link to="/projects">
             <div class="button">
-              Browse Portfolio
+              Voir les projets
             </div>
           </router-link>
         </div>
@@ -111,8 +111,6 @@
   }
 
   .main-container {
-    background-color: var(--background-color);
-    color: var(--text-color);
     display: flex;
     justify-content: center;
     width: 60%;

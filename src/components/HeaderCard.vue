@@ -19,7 +19,7 @@
     </div>
     <div class="button-container toggle">
       <button @click="darkThemeSwitch" aria-label="Toggle themes">
-        <span> Switch Theme</span>
+        <span>Changer de thème</span>
       </button>
     </div>
   </div>
