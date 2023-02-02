@@ -18,6 +18,10 @@
     box-sizing: border-box;
   }
 
+  .container {    
+    overflow-y: hidden;
+  }
+
   .pdf-container {
     height: 50em;
     animation-duration: 1.5s;

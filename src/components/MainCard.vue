@@ -105,6 +105,7 @@
   }
 
   .wrapper {
+    overflow-y: hidden;
     display: flex;
     justify-content: center;
     padding: 40px;
