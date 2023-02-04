@@ -36,10 +36,11 @@
   window.addEventListener("scroll", reveal);
 
   import jsonData from "/projects.json"
+  const orderedJson = jsonData.ProjectsArray.reverse()
   export default {
     data() {
       return {
-        projectData: jsonData.ProjectsArray.reverse()
+        projectData: orderedJson
       }
     }
   }
