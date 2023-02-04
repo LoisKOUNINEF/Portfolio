@@ -4,12 +4,12 @@
       <div class="project-card reveal active" v-for="(items, index) in projectData" v-bind:key="items">
         <div class="about">
           <h2> {{ projectData[index].Title }} </h2>
-          <img :src="projectData[index].Image" :alt="projectData[index].Title">
+          <img :src="projectData[index].Image" :alt="projectData[index].Title" :title="projectData[index].Title">
         </div>
         <p>{{ projectData[index].About }}</p>
         <div class="links">
-          <a :href="projectData[index].GHLink" target="_blank"><img src="../assets/logos/github.png" alt="GitHub"></a>
-          <a :href="projectData[index].LiveLink" target="_blank"><img src="../assets/logos/www.png" alt="Live"></a>
+          <a :href="projectData[index].GHLink" target="_blank"><img src="../assets/logos/github.png" alt="Lien vers le repository GitHub"></a>
+          <a :href="projectData[index].LiveLink" target="_blank"><img src="../assets/logos/www.png" alt="Lien du site"></a>
         </div>
       </div>
     </div>

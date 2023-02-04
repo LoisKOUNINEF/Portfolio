@@ -34,11 +34,11 @@
       </div>
       <div class="second-container">
         <div class="about-me">
-          <h2>A Propos</h2>
+          <h2>A propos de moi</h2>
           <p>
           En reconversion professionnelle après une quinzaine d'années dans le domaine de l'hôtellerie-restauration, je me suis découvert une passion pour la programmation informatique en général et le développement d'applications web en particulier. J'ai une appétence certaine pour les principes de Clean Code, et ai à cœur de produire un code de qualité, lisible et maintenable autant que fonctionnel. 
           <br/>
-          Vous pouvez consulter <router-link to="/resume"><strong>Mon CV</strong></router-link>, ou découvrir quelques-uns de 
+          Vous pouvez consulter <router-link to="/resume"><strong>mon CV</strong></router-link>, ou découvrir quelques-uns de 
           <router-link to="/projects"><strong>mes projets.</strong></router-link></p>
         </div>
         <div class="button-container toggle">
@@ -49,17 +49,20 @@
         <div class="technologies">
           <h2>Technologies</h2>
           <div class="logos">
-            <img src="../assets/logos/git.png" alt="git" width="40%" height="40">
-            <img src="../assets/logos/github.png" alt="github" class="blackimg">
-            <img src="../assets/logos/heroku.png" alt="heroku">
-            <img src="../assets/logos/html5.png" alt="html5">
-            <img src="../assets/logos/css3.png" alt="css3">
-            <img src="../assets/logos/javascript.png" alt="javascript">
-            <img src="../assets/logos/react.png" alt="react" class="blackimg">
-            <img src="../assets/logos/vue.png" alt="vue">
-            <img src="../assets/logos/ruby.png" alt="ruby">
-            <img src="../assets/logos/rails.png" alt="rails">
-            <img src="../assets/logos/postgresql.png" alt="postgreSQL">
+            <img src="../assets/logos/html5.png" alt="html5" title="HTML5">
+            <img src="../assets/logos/css3.png" alt="css3" title="CSS3">
+            <img src="../assets/logos/javascript.png" alt="Javascript (ES6)" title="javascript">
+            <img src="../assets/logos/postgresql.png" alt="PostgreSQL" title="postgreSQL">
+            <br/>  
+            <img src="../assets/logos/nodejs.jpg" alt="nodejs" title="NodeJS" class="blackimg">
+            <img src="../assets/logos/angular.png" alt="angular" title="Angular">
+            <img src="../assets/logos/nestjs.png" alt="nestjs" title="NestJS">
+            <img src="../assets/logos/rails.png" alt="rails" title="Rails">
+            <br/>
+            <img src="../assets/logos/git.png" alt="git" title="Git" width="40%" height="40">
+            <img src="../assets/logos/github.png" alt="github" title="GitHub" class="blackimg">
+            <img src="../assets/logos/heroku.png" alt="heroku" title="Heroku">
+            <img src="../assets/logos/linux.png" alt="linux" title="Linux" class="blackimg">  
           </div>
         </div>
         <div class="button-container">
@@ -172,6 +175,7 @@
   .logos img {
     height: 3em;
     width: 3em;
+    cursor: help;
   }
 
   .blackimg {
