@@ -65,7 +65,7 @@
   .main-container {
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
+    width: 100%;
     justify-content: space-evenly;
     padding-top: 5em;
     margin-bottom: 1em;
@@ -77,8 +77,11 @@
   }
 
   .project-card {
-    width: 40%;
-    margin: 1em;
+    width: 45%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 2.2em;
+    margin-right: 2.2em;
     padding: 1em;
     flex-wrap: 0 0 40%;
     background-color: var(--background-color);
@@ -91,9 +94,11 @@
   .project-card:hover {
    background-color: var(--text-color);
    color: var(--background-color);
-   width: 45%;
+   width: 50%;
    padding-left: 3em;
    padding-right: 3em;
+   margin-left: 0;
+   margin-right: 0;
  }
 
  .about img {
