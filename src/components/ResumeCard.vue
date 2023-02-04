@@ -20,6 +20,7 @@
 
   .container {    
     overflow-y: hidden;
+    padding-top: 2em;
   }
 
   .pdf-container {

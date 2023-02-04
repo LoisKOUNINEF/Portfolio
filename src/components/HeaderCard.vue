@@ -57,6 +57,7 @@
   .container {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 2em;
   }
 
   .button-container {
