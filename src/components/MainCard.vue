@@ -51,8 +51,8 @@
           <div class="logos">
             <img src="../assets/logos/html5.png" alt="html5" title="HTML5">
             <img src="../assets/logos/css3.png" alt="css3" title="CSS3">
-            <img src="../assets/logos/javascript.png" alt="Javascript (ES6)" title="javascript">
-            <img src="../assets/logos/postgresql.png" alt="PostgreSQL" title="postgreSQL">
+            <img src="../assets/logos/javascript.png" alt="javascript" title="Javascript (ES6)">
+            <img src="../assets/logos/postgresql.png" alt="PostgreSQL" title="PostgreSQL">
             <br/>  
             <img src="../assets/logos/nodejs.jpg" alt="nodejs" title="NodeJS" class="blackimg">
             <img src="../assets/logos/angular.png" alt="angular" title="Angular">
@@ -199,10 +199,10 @@
     border-radius: 100px;
     transition: var(--transition);
     box-shadow: var(--box-shadow-dark);
+    border: 1px solid var(--background-color);
   }
 
-  button
-  {
+  button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -220,7 +220,7 @@
     background-color: var(--background-color);
     color: var(--text-color);
     cursor: pointer;
-    border: 1px solid black;
+    border: 1px solid var(--text-color);
   }
 
   button:hover {
