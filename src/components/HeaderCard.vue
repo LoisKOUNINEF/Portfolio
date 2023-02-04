@@ -79,6 +79,7 @@
   }
 
   button {
+    height: 60%;
     background-color: var(--text-color);
     color: var(--background-color);
   }

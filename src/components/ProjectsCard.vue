@@ -141,12 +141,8 @@
   }
 
   .project-card {
-    width: 90%;
+    width: 100%;
   }
-
-  .project-card:hover {
-   width: 90%;
- }
 
 }
 
