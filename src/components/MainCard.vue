@@ -41,10 +41,12 @@
           Vous pouvez consulter <router-link to="/resume"><strong>mon CV</strong></router-link>, ou découvrir quelques-uns de 
           <router-link to="/projects"><strong>mes projets.</strong></router-link></p>
         </div>
-        <div class="button-container toggle">
-          <button @click="darkThemeSwitch" aria-label="Toggle themes">
-            <span>Changer de thème</span>
-          </button>
+        <div class="button-container">
+          <router-link to="/projects">
+            <div class="button">
+              Voir les projets
+            </div>
+          </router-link>
         </div>
         <div class="technologies">
           <h2>Technologies</h2>
@@ -65,12 +67,10 @@
             <img src="../assets/logos/linux.png" alt="linux" title="Linux" class="blackimg">  
           </div>
         </div>
-        <div class="button-container">
-          <router-link to="/projects">
-            <div class="button">
-              Voir les projets
-            </div>
-          </router-link>
+        <div class="button-container toggle">
+          <button @click="darkThemeSwitch" aria-label="Toggle themes">
+            <span>Changer de thème</span>
+          </button>
         </div>
       </div>
     </div>
@@ -184,7 +184,7 @@
   }
 
   .button-container {
-    display: flex;
+    display: block;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 2em;
@@ -200,10 +200,10 @@
     transition: var(--transition);
     box-shadow: var(--box-shadow-dark);
     border: 1px solid var(--background-color);
+    width: 100%;
   }
 
   button {
-    display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--background-color);
@@ -263,7 +263,6 @@
 
     .button-container {
       margin-top: 1em;
-      order: 1;
     }
 
     .social-links {
