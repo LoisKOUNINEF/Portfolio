@@ -38,7 +38,6 @@
   import jsonData from "/projects.json"
   export default {
     data() {
-      console.log(jsonData)
       return {
         projectData: jsonData.ProjectsArray.reverse()
       }

@@ -227,7 +227,7 @@
 
   @media only screen and (max-width: 950px) {
     .main-container {
-      width: 95%;
+      width: 100%;
       flex-wrap: wrap;
     }
 
@@ -244,7 +244,7 @@
     }
 
     .second-container {
-      width: 90%;
+      width: 100%;
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
