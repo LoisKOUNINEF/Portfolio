@@ -79,12 +79,8 @@
   }
 
   button {
-    height: 50%;
-    width: 50%;
     background-color: var(--text-color);
     color: var(--background-color);
-    padding-top: 2em;
-    padding-bottom: 2em;
   }
 
   .toggle {
