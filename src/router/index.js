@@ -7,13 +7,12 @@ const routes = [
   {
     path: '/',
     name: 'About',
-    component: Home,
+    component: Home
   },
   {
-    path: '/Portfolio/:queryParams',
+    path: '/resume',
     name: 'Resume',
-    component: Resume,
-    props: true
+    component: Resume
   },
   {
     path: '/Projects',
@@ -27,7 +26,8 @@ const router = createRouter({
   routes,
   scrollBehavior() {
     document.getElementById('app').scrollIntoView();
-  }
+  },
+  mode: 'hash'
 })
 
 export default router
