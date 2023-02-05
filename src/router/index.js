@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/HomeView.vue'
 import Resume from '../views/ResumeView.vue'
 import Projects from '../views/ProjectsView.vue'
@@ -22,7 +22,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  mode: 'hash',
+  history: createWebHashHistory(process.env.BASE_URL),
   routes,
   scrollBehavior() {
     document.getElementById('app').scrollIntoView();
