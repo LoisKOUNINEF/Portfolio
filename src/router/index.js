@@ -4,20 +4,21 @@ import Resume from '../views/ResumeView.vue'
 import Projects from '../views/ProjectsView.vue'
 
 const routes = [
-{
-  path: '/',
-  name: 'About',
-  component: Home
-},
   {
-path: '/resume',
-name: 'Resume',
-component: Resume
+    path: '/',
+    name: 'About',
+    component: Home,
   },
   {
-path: '/projects',
-name: 'Projects',
-component: Projects
+    path: '/Portfolio/:queryParams',
+    name: 'Resume',
+    component: Resume,
+    props: true
+  },
+  {
+    path: '/Projects',
+    name: 'Projects',
+    component: Projects
   }
 ]
 

@@ -78,10 +78,7 @@
 
   .project-card {
     width: 45%;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 2.2em;
-    margin-right: 2.2em;
+    margin: 1em;
     padding: 1em;
     flex-wrap: 0 0 40%;
     background-color: var(--background-color);
@@ -141,6 +138,10 @@
   }
 
   .project-card {
+    width: 100%;
+  }
+
+  .project-card:hover {
     width: 100%;
   }
 
