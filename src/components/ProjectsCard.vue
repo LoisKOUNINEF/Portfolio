@@ -91,11 +91,6 @@
   .project-card:hover {
    background-color: var(--text-color);
    color: var(--background-color);
-   width: 50%;
-   padding-left: 3em;
-   padding-right: 3em;
-   margin-left: 0;
-   margin-right: 0;
  }
 
  .about img {
