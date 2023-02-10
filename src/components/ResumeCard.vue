@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="pdf-container">
-      <iframe class="pdf" src="resume.pdf#navpanes=0&scrollbar=0&view=fitH" type="application/pdf" frameborder="0" scrolling="auto"></iframe>
+      <iframe class="pdf" :src="$t('resumepdf')" type="application/pdf" frameborder="0" scrolling="auto"></iframe>
     </div>
   </div>
 </template>

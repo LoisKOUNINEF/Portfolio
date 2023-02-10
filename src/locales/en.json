@@ -14,5 +14,10 @@
     "ctaprojects": ", or browse some of ",
     "projects": "my projects",
     "projectbutton": "See projects"
-  }
+  },
+  "imagesAlt": {
+    "livelink": "Live Link",
+    "githublink": "GitHub Link"
+  },
+  "resumepdf": "english_resume.pdf#navpanes=0&scrollbar=0&view=fitH"
 }

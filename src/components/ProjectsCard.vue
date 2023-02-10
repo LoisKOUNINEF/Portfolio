@@ -8,8 +8,8 @@
         </div>
         <p>{{ projectData[index].About }}</p>
         <div class="links">
-          <a :href="projectData[index].GHLink" target="_blank"><img src="../assets/logos/github.png" alt="Lien vers le repository GitHub"></a>
-          <a :href="projectData[index].LiveLink" target="_blank"><img src="../assets/logos/www.png" alt="Lien du site"></a>
+          <a :href="projectData[index].GHLink" target="_blank"><img src="../assets/logos/github.png" :alt='$t("imagesAlt.githublink")'></a>
+          <a :href="projectData[index].LiveLink" target="_blank"><img src="../assets/logos/www.png" :alt='$t("imagesAlt.livelink")'></a>
         </div>
       </div>
     </div>

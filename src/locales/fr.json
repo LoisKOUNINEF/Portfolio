@@ -16,6 +16,8 @@
     "projectbutton": "Voir les projets"
   },
   "imagesAlt": {
-    "": ""
-  }
+    "livelink": "Lien vers le site",
+    "githublink": "Lien du GitHub"
+  },
+  "resumepdf": "french_resume.pdf#navpanes=0&scrollbar=0&view=fitH"
 }
