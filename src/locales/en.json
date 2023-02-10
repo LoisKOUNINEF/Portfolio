@@ -1,3 +1,6 @@
 {
-  "message": "bonjour i18n !!"
+  "about": "About",
+  "resume": "Resume",
+  "projects": "My projects",
+  "switchtheme": "Switch theme" 
 }

@@ -1,3 +1,6 @@
 {
-  "message": "bonjour i18n !!"
+  "about": "A propos",
+  "resume": "Mon CV",
+  "projects": "Mes projets",
+  "switchtheme": "Changer de thème"
 }

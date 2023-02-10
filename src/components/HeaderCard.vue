@@ -3,23 +3,23 @@
     <div class="button-container links">
       <router-link to ="/projects">
         <div class="button">
-          Mes projets
+          {{ $t("projects") }}
         </div>
       </router-link>
       <router-link to="/resume">
         <div class="button">
-          Mon CV
+          {{ $t("resume") }}
         </div>
       </router-link>
       <router-link to="/">
         <div class="button">
-          A propos
+          {{ $t("about") }}
         </div>
       </router-link>
     </div>
     <div class="button-container toggle">
       <button @click="darkThemeSwitch" aria-label="Toggle themes">
-        <span>Changer de thème</span>
+        <span>{{ $t("switchtheme") }}</span>
       </button>
     </div>
   </div>
