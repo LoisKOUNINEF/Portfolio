@@ -23,12 +23,14 @@
       </button>
     </div>
   </div>
+    <LocaleSwitcher />
 </template>
 
 <script>
   import themeChanger from "../theme.js";
+  import LocaleSwitcher from './LocaleSwitcher'
   export default {
-
+    components: {LocaleSwitcher},
     data() {
       return {
         themeChanger: null,
