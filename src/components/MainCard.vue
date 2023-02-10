@@ -5,7 +5,7 @@
         <div class="profile">
           <img src="../assets/profile.jpg" alt="profile picture">
           <h1>Loïs Kouninef</h1>
-          <h3><i>Développeur Web</i></h3>
+          <h3><i>{{ $t("maincard.profession") }}</i></h3>
         </div>
         <div class="social-links">
           <div class="link">
@@ -34,17 +34,17 @@
       </div>
       <div class="second-container">
         <div class="about-me">
-          <h2>A propos de moi</h2>
+          <h2>{{ $t("maincard.about") }}</h2>
           <p>
-          En reconversion professionnelle après une quinzaine d'années dans le domaine de l'hôtellerie-restauration, je me suis découvert une passion pour la programmation informatique en général et le développement d'applications web en particulier. J'ai une appétence certaine pour les principes de Clean Code, et ai à cœur de produire un code de qualité, lisible et maintenable autant que fonctionnel. 
+          {{ $t("maincard.body") }} 
           <br/>
-          Vous pouvez consulter <router-link to="/resume"><strong>mon CV</strong></router-link>, ou découvrir quelques-uns de 
-          <router-link to="/projects"><strong>mes projets.</strong></router-link></p>
+          {{ $t("maincard.ctaresume") }}<router-link to="/resume"><strong>{{ $t("maincard.resume") }}</strong></router-link> {{ $t("maincard.ctaprojects") }}
+          <router-link to="/projects"><strong>{{ $t("maincard.projects") }}</strong></router-link></p>
         </div>
         <div class="button-container">
           <router-link to="/projects">
             <div class="button">
-              Voir les projets
+              {{ $t("maincard.projectbutton") }}
             </div>
           </router-link>
         </div>
@@ -69,8 +69,9 @@
         </div>
         <div class="button-container toggle">
           <button @click="darkThemeSwitch" aria-label="Toggle themes">
-            <span>Changer de thème</span>
+            <span>{{ $t("navbar.switchtheme") }}</span>
           </button>
+          <LocaleSwitcher />
         </div>
       </div>
     </div>
@@ -79,8 +80,9 @@
 
 <script>
   import themeChanger from "../theme.js";
+  import LocaleSwitcher from './LocaleSwitcher'
   export default {
-
+    components: {LocaleSwitcher},
     data() {
       return {
         themeChanger: null,
