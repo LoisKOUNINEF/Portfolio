@@ -57,9 +57,15 @@
   }
 
   .container {
+    width: 100%;
+    position: fixed;
+    z-index: 2;
     display: flex;
     justify-content: space-between;
     margin-bottom: 2em;
+    padding-bottom: 1em;
+    background-color: var(--text-color);
+    color: var(--background-color);
   }
 
   .button-container {

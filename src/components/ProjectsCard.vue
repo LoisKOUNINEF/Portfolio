@@ -67,7 +67,7 @@
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-evenly;
-    padding-top: 5em;
+    margin-top: 7em;
     margin-bottom: 1em;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;

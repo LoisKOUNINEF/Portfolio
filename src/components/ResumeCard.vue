@@ -20,10 +20,10 @@
 
   .container {    
     overflow-y: hidden;
-    padding-top: 2em;
   }
 
   .pdf-container {
+    margin-top: 7em;
     height: 50em;
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
