@@ -7,7 +7,10 @@ const routes = [
   {
     path: '/',
     name: 'About',
-    component: Home
+    component: Home,
+    meta: {
+      hideNavbar: true,
+    }
   },
   {
     path: '/resume',
