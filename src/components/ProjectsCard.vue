@@ -6,7 +6,13 @@
           <h2> {{ projectData[index].Title }} </h2>
           <img :src="projectData[index].Image" :alt="projectData[index].Title" :title="projectData[index].Title">
         </div>
-        <p>{{ projectData[index].About }}</p>
+        <p>
+          {{ 
+          this.$i18n.locale === "fr" ? 
+          projectData[index].About.fr : 
+          projectData[index].About.en 
+          }}
+        </p>
         <div class="links">
           <a :href="projectData[index].GHLink" target="_blank"><img src="../assets/logos/github.png" :alt='$t("imagesAlt.githublink")'></a>
           <a :href="projectData[index].LiveLink" target="_blank"><img src="../assets/logos/www.png" :alt='$t("imagesAlt.livelink")'></a>
@@ -39,8 +45,10 @@
   const orderedJson = jsonData.ProjectsArray.reverse()
   export default {
     data() {
+      const locale = this.$i18n.locale;
+      console.log(locale)
       return {
-        projectData: orderedJson
+        projectData: orderedJson,
       }
     }
   }
