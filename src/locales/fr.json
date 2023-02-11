@@ -3,7 +3,8 @@
     "about": "A propos",
     "resume": "Mon CV",
     "projects": "Mes projets",
-    "switchtheme": "Changer de thème"
+    "darkTheme": "Sombre",
+    "lightTheme": "Clair"
   },
    "maincard": {
     "profession": "Développeur Web",

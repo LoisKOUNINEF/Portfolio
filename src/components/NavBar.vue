@@ -20,7 +20,7 @@
     <div class="button-container toggle">
       <LocaleSwitcher />
       <button @click="darkThemeSwitch" aria-label="Toggle themes">
-        <span>{{ $t("navbar.switchtheme") }}</span>
+        <span>{{ darkTheme ? $t("navbar.darkTheme") : $t("navbar.lightTheme") }}</span>
       </button>
     </div>
   </div>
@@ -28,12 +28,13 @@
 
 <script>
   import themeChanger from "../theme.js";
-  import LocaleSwitcher from './LocaleSwitcher'
+  import LocaleSwitcher from './LocaleSwitcher';
   export default {
     components: {LocaleSwitcher},
     data() {
       return {
         themeChanger: null,
+        darkTheme: false,
         showNavbar: true,
         lastScrollPosition: 0,
       };
@@ -42,6 +43,7 @@
     methods: {
       darkThemeSwitch() {
         this.themeChanger._darkThemeSwitch();
+        this.darkTheme = !this.darkTheme
       },
       onScroll () {
         const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop

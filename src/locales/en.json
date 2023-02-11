@@ -3,7 +3,8 @@
     "about": "About",
     "resume": "My resume",
     "projects": "My projects",
-    "switchtheme": "Switch theme"
+    "darkTheme": "Dark",
+    "lightTheme": "Light"
   },
   "maincard": {
     "profession": "Web Developper",

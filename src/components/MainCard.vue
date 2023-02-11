@@ -72,7 +72,7 @@
         </div>
         <div class="button-container toggle">
           <button @click="darkThemeSwitch" aria-label="Toggle themes">
-            <span>{{ $t("navbar.switchtheme") }}</span>
+            <span>{{ darkTheme ? $t("navbar.darkTheme") : $t("navbar.lightTheme") }}</span>
           </button>
         </div>
       </div>
@@ -88,12 +88,14 @@
     data() {
       return {
         themeChanger: null,
+        darkTheme: false,
       };
     },
 
     methods: {
       darkThemeSwitch() {
         this.themeChanger._darkThemeSwitch();
+        this.darkTheme = !this.darkTheme;
       },
     },
 
