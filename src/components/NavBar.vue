@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" :class="{ 'navbar--hidden': !showNavbar }">
     <div class="button-container links">
       <router-link to ="/projects">
         <div class="button">
@@ -34,6 +34,8 @@
     data() {
       return {
         themeChanger: null,
+        showNavbar: true,
+        lastScrollPosition: 0,
       };
     },
 
@@ -41,11 +43,28 @@
       darkThemeSwitch() {
         this.themeChanger._darkThemeSwitch();
       },
+      onScroll () {
+        const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
+        if (currentScrollPosition < 0) {
+          return
+        }
+        if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 60) {
+          return
+        }
+        this.showNavbar = currentScrollPosition < this.lastScrollPosition
+        this.lastScrollPosition = currentScrollPosition
+      }
     },
 
     created() {
       this.themeChanger = new themeChanger();
     },
+    mounted () {
+      window.addEventListener('scroll', this.onScroll)
+    },
+    beforeUnmount () {
+      window.removeEventListener('scroll', this.onScroll)
+    }
 
   }
 </script>
@@ -66,6 +85,8 @@
     padding-bottom: 1em;
     background-color: var(--text-color);
     color: var(--background-color);
+    transform: translate3d(100%);
+    transition: 1s all ease;
   }
 
   .button-container {
@@ -126,6 +147,12 @@
 
   a {
     text-decoration: none;
+  }
+
+  .container.navbar--hidden {
+  opacity: O;
+  transform: translate3d(0, -100%, 0);
+  transition: 1s all ease;
   }
 
   @media only screen and (max-width: 900px) {
