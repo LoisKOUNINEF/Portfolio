@@ -85,7 +85,7 @@
     padding-bottom: 1em;
     background-color: var(--text-color);
     color: var(--background-color);
-    transform: translate3d(100%);
+    transform: translate3d(0,0,0);
     transition: 1s all ease;
   }
 
