@@ -34,7 +34,10 @@
       </div>
       <div class="second-container">
         <div class="about-me">
-          <h2>{{ $t("maincard.about") }}</h2>
+          <h2>
+            {{ $t("maincard.about") }} 
+            <LocaleSwitcher />
+          </h2>
           <p>
           {{ $t("maincard.body") }} 
           <br/>
@@ -71,7 +74,6 @@
           <button @click="darkThemeSwitch" aria-label="Toggle themes">
             <span>{{ $t("navbar.switchtheme") }}</span>
           </button>
-          <LocaleSwitcher />
         </div>
       </div>
     </div>
