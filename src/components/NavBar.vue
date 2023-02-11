@@ -18,12 +18,12 @@
       </router-link>
     </div>
     <div class="button-container toggle">
+      <LocaleSwitcher />
       <button @click="darkThemeSwitch" aria-label="Toggle themes">
         <span>{{ $t("navbar.switchtheme") }}</span>
       </button>
     </div>
   </div>
-    <LocaleSwitcher />
 </template>
 
 <script>
@@ -88,6 +88,9 @@
   }
 
   .toggle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-delay: 0s;
@@ -117,6 +120,12 @@
 
   a {
     text-decoration: none;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .toggle {
+      flex-wrap: wrap-reverse;
+    }
   }
 
 </style>

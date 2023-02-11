@@ -20,6 +20,7 @@ export default {
   select {
     background-color: var(--text-color);
     color: var(--background-color);
-    height: 100%;
+    height: 50%;
+    border-radius: 6em;
   }
 </style>
