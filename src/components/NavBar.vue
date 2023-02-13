@@ -19,32 +19,27 @@
     </div>
     <div class="button-container toggle">
       <LocaleSwitcher />
-      <button @click="darkThemeSwitch" aria-label="Toggle themes">
-        <span>{{ darkTheme ? $t("navbar.lightTheme") : $t("navbar.darkTheme") }}</span>
-      </button>
+      <ThemeSwitcher />
     </div>
   </div>
 </template>
 
 <script>
-  import themeChanger from "../theme.js";
   import LocaleSwitcher from './LocaleSwitcher';
+  import ThemeSwitcher from './ThemeSwitcher';
   export default {
-    components: {LocaleSwitcher},
+    components: {
+      LocaleSwitcher,
+      ThemeSwitcher,
+    },
     data() {
       return {
-        themeChanger: null,
-        darkTheme: document.querySelector('#dark-theme-style'),
         showNavbar: true,
         lastScrollPosition: 0,
       };
     },
 
     methods: {
-      darkThemeSwitch() {
-        this.themeChanger._darkThemeSwitch();
-        this.darkTheme = !this.darkTheme
-      },
       onScroll () {
         const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
         if (currentScrollPosition < 0) {
@@ -58,9 +53,6 @@
       }
     },
 
-    created() {
-      this.themeChanger = new themeChanger();
-    },
     mounted () {
       window.addEventListener('scroll', this.onScroll)
     },
@@ -93,7 +85,6 @@
 
   .button-container {
     display: flex;
-    margin-top: 1em;
   }
 
   button, .button {
@@ -117,9 +108,10 @@
   }
 
   .toggle {
-    display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    margin-top: .5;
+    align-items: center;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-delay: 0s;
@@ -128,6 +120,7 @@
   }
 
   .links {
+    margin-top: 1em;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-delay: 0s;

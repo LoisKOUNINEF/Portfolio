@@ -70,39 +70,20 @@
             <img src="../assets/logos/linux.png" alt="linux" title="Linux" class="blackimg">  
           </div>
         </div>
-        <div class="button-container toggle">
-          <button @click="darkThemeSwitch" aria-label="Toggle themes">
-            <span>{{ darkTheme ? $t("navbar.lightTheme") : $t("navbar.darkTheme") }}</span>
-          </button>
-        </div>
+        <ThemeSwitcher/>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-  import themeChanger from "../theme.js";
-  import LocaleSwitcher from './LocaleSwitcher'
+  import LocaleSwitcher from './LocaleSwitcher';
+  import ThemeSwitcher from './ThemeSwitcher';
   export default {
-    components: {LocaleSwitcher},
-    data() {
-      return {
-        themeChanger: null,
-        darkTheme: document.querySelector('#dark-theme-style'),
-      };
+    components: {
+      LocaleSwitcher,
+      ThemeSwitcher,
     },
-
-    methods: {
-      darkThemeSwitch() {
-        this.themeChanger._darkThemeSwitch();
-        this.darkTheme = !this.darkTheme;
-      },
-    },
-
-    created() {
-      this.themeChanger = new themeChanger();
-    },
-
   }
 
 </script>
