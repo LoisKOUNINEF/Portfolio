@@ -1,6 +1,6 @@
 <template>
   <button @click="darkThemeSwitch" aria-label="Toggle themes">
-    <span>{{ darkTheme ? '☀' : '☽' }}</span>
+    <span>{{ darkTheme ? '🌕' : '🌑' }}</span>
   </button>
 </template>
 
@@ -35,8 +35,8 @@
   }
 
 	button {
-    background-color: var(--text-color)!important;
-    color: var(--background-color)!important;
+    background-color: var(--background-color)!important;
+    color: var(--text-color)!important;
     font-weight: 600;
     border-radius: 6em;
     transition: var(--transition);

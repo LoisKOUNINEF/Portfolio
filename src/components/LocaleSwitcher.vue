@@ -21,8 +21,8 @@ export default {
 <style scoped>
 
   select {
-    background-color: var(--text-color);
-    color: var(--background-color);
+    background-color: var(--background-color);
+    color: var(--text-color);
     height: 50%;
     border-radius: 6em;
   }
