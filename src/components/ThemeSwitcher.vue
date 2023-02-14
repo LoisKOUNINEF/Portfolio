@@ -51,4 +51,13 @@
     cursor: pointer;
   }
 
+  @media only screen and (max-width: 900px) {
+     button {
+			padding-left: 0;
+			padding-right: 0;
+			border-radius: 3em;
+    }
+  }
+
+
 </style>

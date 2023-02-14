@@ -38,5 +38,9 @@ export default {
       background-color: var(--text-color);
       color: var(--background-color);
     }
+
+    select {
+      border-radius: 3em;
+    }
   }
 </style>

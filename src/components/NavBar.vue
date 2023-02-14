@@ -7,12 +7,12 @@
         </div>
       </router-link>
       <router-link to="/resume">
-        <div class="button">
+        <div class="button btnchild">
           {{ $t("navbar.resume") }}
         </div>
       </router-link>
       <router-link to="/">
-        <div class="button">
+        <div class="button btnchild">
           {{ $t("navbar.about") }}
         </div>
       </router-link>
@@ -152,8 +152,22 @@
 
   @media only screen and (max-width: 900px) {
     .toggle {
-      flex-wrap: wrap-reverse;
+      flex-wrap: nowrap;
     }
+
+    .container {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .button {
+      margin-left: 0;
+    }
+
+    .btnchild {
+      margin-left: 1em;
+    }
+
   }
 
 </style>

@@ -70,7 +70,7 @@
             <img src="../assets/logos/linux.png" alt="linux" title="Linux" class="blackimg">  
           </div>
         </div>
-        <ThemeSwitcher/>
+        <ThemeSwitcher />
       </div>
     </div>
   </div>
@@ -239,6 +239,8 @@
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
       padding: 1em;
       padding-bottom: 2em;
       animation-duration: 2s;
@@ -269,6 +271,7 @@
     .link img {
       height: 2.5em;
     }
+
   }
 
 </style>
