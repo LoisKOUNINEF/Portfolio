@@ -43,6 +43,7 @@
     box-shadow: var(--box-shadow-light);
     padding-left: 1em!important;
     padding-right: 1em!important;
+    transition: var(--transition);
   }
 
   button:hover {

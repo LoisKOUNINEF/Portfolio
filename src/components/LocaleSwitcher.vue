@@ -25,6 +25,7 @@ export default {
     color: var(--text-color);
     height: 50%;
     border-radius: 6em;
+    transition: var(--transition);
   }
 
   select:hover {
