@@ -41,8 +41,8 @@
           <p>
           {{ $t("maincard.body") }} 
           <br/>
-          {{ $t("maincard.ctaresume") }}<router-link to="/resume"><strong>{{ $t("maincard.resume") }}</strong></router-link> {{ $t("maincard.ctaprojects") }}
-          <router-link to="/projects"><strong>{{ $t("maincard.projects") }}</strong></router-link></p>
+          {{ $t("maincard.ctaresume") }} <router-link to="/resume"><strong>{{ $t("maincard.resume") }}, </strong></router-link> {{ $t("maincard.ctaprojects") }} 
+          <router-link to="/projects"><strong>{{ $t("maincard.projects") }}</strong></router-link>.</p>
         </div>
         <div class="button-container">
           <router-link to="/projects">
