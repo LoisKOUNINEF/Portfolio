@@ -3,8 +3,9 @@
   <h1>Rules :</h1>
   <img src="../assets/rock_papers_scissors_lizard_spock.png">
   <h2>{{ $t("secret.computerchoice") }} : <span id="computer-choice"></span></h2>
+  <br/>
   <h2>{{ $t("secret.userchoice") }} : <span id="user-choice"></span></h2>
-  <h2>{{ $t("secret.result") }} : <span id="result"></span></h2>
+  <h2>&nbsp;<span id="result"></span></h2>
 
   <div class="button-container">
     <button v-on:click="userChoice($event)" value="Rock">{{ $t("secret.choices.rock") }}</button>
@@ -18,8 +19,6 @@
 
 <script>
 
-const possibleChoices = document.querySelectorAll('button');
-
 let userChoice;
 let computerChoice;
 let result;
@@ -32,22 +31,29 @@ export default {
       userChoiceDisplay.textContent = userChoice;
       this.generateComputerChoice();
       this.getResult();
+      return userChoice = ''
+    },
+
+    randomRange(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min + 1) + min);
     },
 
     generateComputerChoice() {
       const computerChoiceDisplay = document.getElementById('computer-choice')
-      const randomNumber = Math.floor(Math.random() * possibleChoices.length + 1)
+      const randomNumber = this.randomRange(1, 5);
 
       switch (randomNumber) {
-        case 0: computerChoice = 'Rock';
+        case 1: computerChoice = 'Rock';
         break;
-        case 1: computerChoice = 'Paper';
+        case 2: computerChoice = 'Paper';
         break;
-        case 2: computerChoice = 'Scissors';
+        case 3: computerChoice = 'Scissors';
         break;
-        case 3: computerChoice = 'Lizard';
+        case 4: computerChoice = 'Lizard';
         break;
-        case 4: computerChoice = 'Spock';
+        case 5: computerChoice = 'Spock';
         break;
       }
       computerChoiceDisplay.textContent = computerChoice;
@@ -57,37 +63,37 @@ export default {
       const resultDisplay = document.getElementById('result')
 
       if (computerChoice === userChoice) {
-        result = 'Draw !'
+        result = '👉👈'
       }
       if (computerChoice === 'Paper' && (userChoice === 'Scissors' || userChoice === 'Lizard')) {
-        result = 'Win !'
+        result = '👍'
       }
       if (computerChoice === 'Paper' && (userChoice === 'Rock' || userChoice === 'Spock')) {
-        result = 'Lose !'
+        result =  '👎'
       }
       if (computerChoice === 'Scissors' && (userChoice === 'Paper' || userChoice === 'Lizard')) {
-        result = 'Lose !'
+        result =  '👎'
       }
       if (computerChoice === 'Scissors' && (userChoice === 'Rock' || userChoice === 'Spock')) {
-        result = 'Win !'
+        result = '👍'
       }
       if (computerChoice === 'Rock' && (userChoice === 'Scissors' || userChoice === 'Lizard')) {
-        result = 'Lose !'
+        result =  '👎'
       }
       if (computerChoice === 'Rock' && (userChoice === 'Paper' || userChoice === 'Spock')) {
-        result = 'Win !'
+        result = '👍'
       }
       if (computerChoice === 'Lizard' && (userChoice === 'Rock' || userChoice === 'Scissors')) {
-        result = 'Win !'
+        result = '👍'
       }
       if (computerChoice === 'Lizard' && (userChoice === 'Paper' || userChoice === 'Spock')) {
-        result = 'Lose !'
+        result =  '👎'
       }
       if (computerChoice === 'Spock' && (userChoice === 'Lizard' || userChoice === 'Paper')) {
-        result = 'Win !'
+        result = '👍'
       }
       if (computerChoice === 'Spock' && (userChoice === 'Rock' || userChoice === 'Scissors')) {
-        result = 'Lose !'
+        result =  '👎'
       }
 
       resultDisplay.textContent = result;
@@ -135,6 +141,10 @@ button+button {
 button:hover {
   background-color: var(--background-color);
   color: var(--text-color);
+}
+
+#result {
+  font-size: 2em;
 }
 
 </style>
