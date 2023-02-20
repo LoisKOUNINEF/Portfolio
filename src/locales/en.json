@@ -22,8 +22,8 @@
   },
   "resumepdf": "english_resume.pdf#navpanes=0&scrollbar=0&view=fitH",
   "secret": {
-    "userchoice": "User Choice",
-    "computerchoice" : "Computer Choice",
+    "userchoice": "You Picked",
+    "computerchoice" : "Computer Picked",
     "result": "Result",
     "choices": {
       "rock": "Rock",

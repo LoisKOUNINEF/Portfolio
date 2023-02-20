@@ -1,18 +1,18 @@
 <template>
   <div class="container" align="center" width="100%">
   <h1>Rules :</h1>
-  <img src="../assets/rock_papers_scissors_lizard_spock.png">
+  <img src="../assets/rules.png">
   <h2>{{ $t("secret.computerchoice") }} : <span id="computer-choice"></span></h2>
   <br/>
   <h2>{{ $t("secret.userchoice") }} : <span id="user-choice"></span></h2>
   <h2>&nbsp;<span id="result"></span></h2>
-
+ 
   <div class="button-container">
-    <button v-on:click="userChoice($event)" value="Rock">{{ $t("secret.choices.rock") }}</button>
-    <button v-on:click="userChoice($event)" value="Paper">{{ $t("secret.choices.paper") }}</button>
-    <button v-on:click="userChoice($event)" value="Scissors">{{ $t("secret.choices.scissors") }}</button>
-    <button v-on:click="userChoice($event)" value="Lizard">{{ $t("secret.choices.lizard") }}</button>
-    <button v-on:click="userChoice($event)" value="Spock">{{ $t("secret.choices.spock") }}</button>
+    <button v-on:click="userChoice($event)" value="👊">👊 {{ $t("secret.choices.rock") }} 👊</button>
+    <button v-on:click="userChoice($event)" value="✋">✋ {{ $t("secret.choices.paper") }} ✋</button>
+    <button v-on:click="userChoice($event)" value="✌️">✌️ {{ $t("secret.choices.scissors") }} ✌️</button>
+    <button v-on:click="userChoice($event)" value="🤏">🤏 {{ $t("secret.choices.lizard") }} 🤏</button>
+    <button v-on:click="userChoice($event)" value="🖖">🖖 {{ $t("secret.choices.spock") }} 🖖</button>
   </div>
 </div>
 </template>
@@ -45,15 +45,15 @@ export default {
       const randomNumber = this.randomRange(1, 5);
 
       switch (randomNumber) {
-        case 1: computerChoice = 'Rock';
+        case 1: computerChoice = '👊';
         break;
-        case 2: computerChoice = 'Paper';
+        case 2: computerChoice = '✋';
         break;
-        case 3: computerChoice = 'Scissors';
+        case 3: computerChoice = '✌️';
         break;
-        case 4: computerChoice = 'Lizard';
+        case 4: computerChoice = '🤏';
         break;
-        case 5: computerChoice = 'Spock';
+        case 5: computerChoice = '🖖';
         break;
       }
       computerChoiceDisplay.textContent = computerChoice;
@@ -65,34 +65,34 @@ export default {
       if (computerChoice === userChoice) {
         result = '👉👈'
       }
-      if (computerChoice === 'Paper' && (userChoice === 'Scissors' || userChoice === 'Lizard')) {
+      if (computerChoice === '✋' && (userChoice === '✌️' || userChoice === '🤏')) {
         result = '👍'
       }
-      if (computerChoice === 'Paper' && (userChoice === 'Rock' || userChoice === 'Spock')) {
+      if (computerChoice === '✋' && (userChoice === '👊' || userChoice === '🖖')) {
         result =  '👎'
       }
-      if (computerChoice === 'Scissors' && (userChoice === 'Paper' || userChoice === 'Lizard')) {
+      if (computerChoice === '✌️' && (userChoice === '✋' || userChoice === '🤏')) {
         result =  '👎'
       }
-      if (computerChoice === 'Scissors' && (userChoice === 'Rock' || userChoice === 'Spock')) {
+      if (computerChoice === '✌️' && (userChoice === '👊' || userChoice === '🖖')) {
         result = '👍'
       }
-      if (computerChoice === 'Rock' && (userChoice === 'Scissors' || userChoice === 'Lizard')) {
+      if (computerChoice === '👊' && (userChoice === '✌️' || userChoice === '🤏')) {
         result =  '👎'
       }
-      if (computerChoice === 'Rock' && (userChoice === 'Paper' || userChoice === 'Spock')) {
+      if (computerChoice === '👊' && (userChoice === '✋' || userChoice === '🖖')) {
         result = '👍'
       }
-      if (computerChoice === 'Lizard' && (userChoice === 'Rock' || userChoice === 'Scissors')) {
+      if (computerChoice === '🤏' && (userChoice === '👊' || userChoice === '✌️')) {
         result = '👍'
       }
-      if (computerChoice === 'Lizard' && (userChoice === 'Paper' || userChoice === 'Spock')) {
+      if (computerChoice === '🤏' && (userChoice === '✋' || userChoice === '🖖')) {
         result =  '👎'
       }
-      if (computerChoice === 'Spock' && (userChoice === 'Lizard' || userChoice === 'Paper')) {
+      if (computerChoice === '🖖' && (userChoice === '🤏' || userChoice === '✋')) {
         result = '👍'
       }
-      if (computerChoice === 'Spock' && (userChoice === 'Rock' || userChoice === 'Scissors')) {
+      if (computerChoice === '🖖' && (userChoice === '👊' || userChoice === '✌️')) {
         result =  '👎'
       }
 

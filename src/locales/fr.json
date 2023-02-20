@@ -22,8 +22,8 @@
   },
   "resumepdf": "french_resume.pdf#navpanes=0&scrollbar=0&view=fitH",
   "secret": {
-    "userchoice": "Choix de l'utilisateur",
-    "computerchoice" : "Choix de l'ordinateur",
+    "userchoice": "Vous avez choisi",
+    "computerchoice" : "L'ordinateur a choisi",
     "result": "Résultat",
     "choices": {
       "rock": "Pierre",
