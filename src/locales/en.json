@@ -20,5 +20,17 @@
     "livelink": "Live Link",
     "githublink": "GitHub Link"
   },
-  "resumepdf": "english_resume.pdf#navpanes=0&scrollbar=0&view=fitH"
+  "resumepdf": "english_resume.pdf#navpanes=0&scrollbar=0&view=fitH",
+  "secret": {
+    "userchoice": "User Choice",
+    "computerchoice" : "Computer Choice",
+    "result": "Result",
+    "choices": {
+      "rock": "Rock",
+      "paper": "Paper",
+      "scissors": "Scissors",
+      "lizard": "Lizard",
+      "spock": "Spock"
+    }
+  }
 }

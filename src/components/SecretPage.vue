@@ -2,16 +2,16 @@
   <div class="container" align="center" width="100%">
   <h1>Rules :</h1>
   <img src="../assets/rock_papers_scissors_lizard_spock.png">
-  <h2 class="info">Computer choice : <span id="computer-choice"></span></h2>
-  <h2 class="info">User choice : <span id="user-choice"></span></h2>
-  <h2 class="info">Result : <span id="result"></span></h2>
+  <h2 class="info">{{ $t("secret.computerchoice") }} : <span id="computer-choice"></span></h2>
+  <h2 class="info">{{ $t("secret.userchoice") }} : <span id="user-choice"></span></h2>
+  <h2 class="info">{{ $t("secret.result") }} : <span id="result"></span></h2>
 
   <div class="button-container">
-    <button id="Rock">Rock</button>
-    <button id="Paper">Paper</button>
-    <button id="Scissors">Scissors</button>
-    <button id="Lizard">Lizard</button>
-    <button id="Spock">Spock</button>
+    <button id="Rock">{{ $t("secret.choices.rock") }}</button>
+    <button id="Paper">{{ $t("secret.choices.paper") }}</button>
+    <button id="Scissors">{{ $t("secret.choices.scissors") }}</button>
+    <button id="Lizard">{{ $t("secret.choices.lizard") }}</button>
+    <button id="Spock">{{ $t("secret.choices.spock") }}</button>
   </div>
 </div>
 </template>
@@ -103,7 +103,7 @@ img {
   box-shadow: var(--box-shadow-light) 1em;
 }
 
-.info {
+h2 {
   color: var(--background-color);
 }
 
