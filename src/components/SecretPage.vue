@@ -19,6 +19,9 @@
 <script>
 
 const possibleChoices = document.querySelectorAll('button');
+const userChoiceDisplay = document.getElementById('user-choice')
+const computerChoiceDisplay = document.getElementById('computer-choice')
+const resultDisplay = document.getElementById('result')
 let userChoice;
 let computerChoice;
 let result;
@@ -26,16 +29,13 @@ let result;
 export default {
   methods: {
     userChoice(e) {
-      const userChoiceDisplay = document.getElementById('user-choice')
       userChoice = e.target.value;
       userChoiceDisplay.textContent = userChoice;
       this.generateComputerChoice();
-      return this.getResult()
+      this.getResult();
     },
 
     generateComputerChoice() {
-      const computerChoiceDisplay = document.getElementById('computer-choice')
-
       const randomNumber = Math.floor(Math.random() * possibleChoices.length + 1)
       switch (randomNumber) {
         case 0: computerChoice = 'Rock';
@@ -49,11 +49,10 @@ export default {
         case 4: computerChoice = 'Spock';
         break;
       }
-      computerChoiceDisplay.textContent = computerChoice
+      computerChoiceDisplay.textContent = computerChoice;
     },
 
     getResult() {
-      const resultDisplay = document.getElementById('result')
       if (computerChoice === userChoice) {
         result = 'Draw !'
       }
@@ -88,8 +87,9 @@ export default {
         result = 'Lose !'
       }
 
-      resultDisplay.textContent = result
+      resultDisplay.textContent = result;
     }
+    
   }
 }
 
