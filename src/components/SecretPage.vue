@@ -1,9 +1,9 @@
 <template>
   <div class="container">
-    <div>
-      <img src="../assets/rules.png">
+    <img src="../assets/rules.png">
+    <div class="info">
+      
       <h2>{{ $t("secret.computerchoice") }} : <span id="computer-choice"></span></h2>
-      <br/>
       <h2>{{ $t("secret.userchoice") }} : <span id="user-choice"></span></h2>
       <h2>&nbsp;<span id="result"></span></h2>
     </div>
@@ -107,53 +107,75 @@ export default {
 
 <style scoped>
 
-*, *::before, *::after {
-    box-sizing: border-box;
+  *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    .container {    
+      padding-top: 7em;
+      padding-bottom: 2em;
+    }
+
+  img {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-radius: 40%;
+    transition: var(--transition);
+    box-shadow: var(--box-shadow-light) 1em;
   }
 
-  .container {    
-    padding-top: 7em;
+  h2 {
+    color: var(--background-color);
   }
 
-img {
-  margin-top: 2em;
-  margin-bottom: 2em;
-  border-radius: 40%;
-  transition: var(--transition);
-  box-shadow: var(--box-shadow-light) 1em;
-}
+  .button-container {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
-h2 {
-  color: var(--background-color);
-}
-
-.button-container {
-  margin-top: 2em;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-button {
+  button {
     height: 60%;
     background-color: var(--text-color);
     color: var(--background-color);
     border-radius: 6em;
     transition: var(--transition);
     box-shadow: var(--box-shadow-light);
-}
+  }
 
-button+button {
-  margin-left: 2em;
-}
+  button+button {
+    margin-left: 2em;
+  }
 
-button:hover {
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
+  button:hover {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
 
-#result {
-  font-size: 2em;
-}
+  #result {
+    font-size: 2em;
+  }
+
+  @media only screen and (max-width: 900px) {
+
+    .container{
+      padding-bottom: 0;
+      margin-bottom: 3em;
+    }
+
+    button {
+      height: 3em;
+      margin-bottom: 2em;
+    }
+
+    .button-container {
+      justify-content: space-evenly;
+    }
+
+    button+button {
+      margin-left: 0;
+    }
+  }
 
 </style>

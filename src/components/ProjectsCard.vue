@@ -103,51 +103,50 @@
 
  .about img {
   height: 10rem;
-}
-
-.links {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.links img:hover {
-  cursor: pointer;
-}
-
-.links img {
-  height: 3em;
-  margin-top: 1em;
-  background-color: white;
-  border-radius: 50%;
-  border: 1px solid black;
-}
-
-.reveal{
-  position: relative;
-  transform: translateY(100px);
-  opacity: 0;
-}
-
-.reveal.active{
-  transform: translateY(0);
-  opacity: 1;
-}
-
-@media only screen and (max-width: 900px) {
-  .main-container {
-    width: 100%;
   }
 
-  .project-card {
-    width: 100%;
+  .links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
-  .project-card:hover {
-    width: 100%;
+  .links img:hover {
+    cursor: pointer;
   }
 
-}
+  .links img {
+    height: 3em;
+    margin-top: 1em;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+
+  .reveal{
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .main-container {
+      width: 100%;
+    }
+
+    .project-card {
+      width: 100%;
+    }
+
+    .project-card:hover {
+      width: 100%;
+    }
+  }
 
 </style>
