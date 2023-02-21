@@ -1,20 +1,21 @@
 <template>
-  <div class="container" align="center" width="100%">
-  <h1>Rules :</h1>
-  <img src="../assets/rules.png">
-  <h2>{{ $t("secret.computerchoice") }} : <span id="computer-choice"></span></h2>
-  <br/>
-  <h2>{{ $t("secret.userchoice") }} : <span id="user-choice"></span></h2>
-  <h2>&nbsp;<span id="result"></span></h2>
- 
-  <div class="button-container">
-    <button v-on:click="userChoice($event)" value="👊">👊 {{ $t("secret.choices.rock") }} 👊</button>
-    <button v-on:click="userChoice($event)" value="✋">✋ {{ $t("secret.choices.paper") }} ✋</button>
-    <button v-on:click="userChoice($event)" value="✌️">✌️ {{ $t("secret.choices.scissors") }} ✌️</button>
-    <button v-on:click="userChoice($event)" value="🤏">🤏 {{ $t("secret.choices.lizard") }} 🤏</button>
-    <button v-on:click="userChoice($event)" value="🖖">🖖 {{ $t("secret.choices.spock") }} 🖖</button>
+  <div class="container">
+    <div>
+      <img src="../assets/rules.png">
+      <h2>{{ $t("secret.computerchoice") }} : <span id="computer-choice"></span></h2>
+      <br/>
+      <h2>{{ $t("secret.userchoice") }} : <span id="user-choice"></span></h2>
+      <h2>&nbsp;<span id="result"></span></h2>
+    </div>
+
+    <div class="button-container">
+      <button v-on:click="userChoice($event)" value="👊">👊 {{ $t("secret.choices.rock") }} 👊</button>
+      <button v-on:click="userChoice($event)" value="✋">✋ {{ $t("secret.choices.paper") }} ✋</button>
+      <button v-on:click="userChoice($event)" value="✌️">✌️ {{ $t("secret.choices.scissors") }} ✌️</button>
+      <button v-on:click="userChoice($event)" value="🤏">🤏 {{ $t("secret.choices.lizard") }} 🤏</button>
+      <button v-on:click="userChoice($event)" value="🖖">🖖 {{ $t("secret.choices.spock") }} 🖖</button>
+    </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -106,6 +107,14 @@ export default {
 
 <style scoped>
 
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  .container {    
+    padding-top: 7em;
+  }
+
 img {
   margin-top: 2em;
   margin-bottom: 2em;
@@ -116,6 +125,7 @@ img {
 
 h2 {
   color: var(--background-color);
+  z-index: 10;
 }
 
 .button-container {
