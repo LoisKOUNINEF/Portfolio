@@ -125,7 +125,6 @@ img {
 
 h2 {
   color: var(--background-color);
-  z-index: 10;
 }
 
 .button-container {
