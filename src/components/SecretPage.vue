@@ -141,7 +141,7 @@ export default {
     color: var(--background-color);
     border-radius: 6em;
     transition: var(--transition);
-    box-shadow: var(--box-shadow-light);
+    box-shadow: var(--box-shadow-light) var(--box-shadow-small);
   }
 
   button+button {

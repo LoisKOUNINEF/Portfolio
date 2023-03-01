@@ -190,7 +190,7 @@
     margin-top: 2em;
     border-radius: 6em;
     transition: var(--transition);
-    box-shadow: var(--box-shadow-dark);
+    box-shadow: var(--box-shadow-dark) var(--box-shadow-small);
     border: 1px solid var(--background-color);
     width: 100%;
   }
@@ -212,7 +212,7 @@
     font-weight: 600;
     border-radius: 6em;
     transition: var(--transition);
-    box-shadow: var(--box-shadow-light);
+    box-shadow: var(--box-shadow-light) var(--box-shadow-small);
     padding: .5em;
   }
 
