@@ -50,6 +50,11 @@
               {{ $t("maincard.projectbutton") }}
             </div>
           </router-link>
+          <div class="small-button">
+          <a href=mailto:“lkouninef@gmail.com”>
+            {{ $t("maincard.contact") }}
+          </a>
+        </div>
         </div>
         <div class="technologies">
           <h2>Technologies</h2>
@@ -188,6 +193,16 @@
     box-shadow: var(--box-shadow-dark);
     border: 1px solid var(--background-color);
     width: 100%;
+  }
+
+  .small-button {
+    font-weight: 600;
+    border-radius: 6em;
+    transition: var(--transition);
+    box-shadow: var(--box-shadow-light);
+    padding-left: 1em!important;
+    padding-right: 1em!important;
+    transition: var(--transition);
   }
 
   button {
