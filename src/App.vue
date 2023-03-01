@@ -22,7 +22,7 @@ import NavBar from '@/components/NavBar.vue'
     --box-shadow-dark: rgba(0, 0, 0, 0.24);
     --box-shadow-light: rgba(255, 255, 255, 0.5);
     --box-shadow-small: 0px 3px 8px;
-    --box-shadow-large: .5em .5em 2em 1em;
+    --box-shadow-large: 0 0 2em 1em;
     background-color: var(--text-color);
     transition: var(--transition);
   }
