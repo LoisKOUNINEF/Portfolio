@@ -52,7 +52,7 @@
           </router-link>
           <div class="small-button">
           <a href=mailto:“lkouninef@gmail.com”>
-            {{ $t("maincard.contact") }}
+            ✉️ {{ $t("maincard.contact") }} ✉️
           </a>
         </div>
         </div>
