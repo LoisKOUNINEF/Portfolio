@@ -73,6 +73,7 @@
   .main-container {
     display: flex;
     flex-wrap: wrap;
+    gap: 2em;
     width: 100%;
     justify-content: space-evenly;
     margin-top: 7em;
@@ -86,20 +87,20 @@
 
   .project-card {
     width: 45%;
-    margin: 1em;
     padding: 1em;
     flex-wrap: 0 0 40%;
     background-color: var(--background-color);
     color: var(--text-color);
     border-radius: 1em;
-    box-shadow: var(--box-shadow-light);
+    box-shadow: var(--box-shadow-light) var(--box-shadow-small);
     transition: 1s all ease;
   }
 
   .project-card:hover {
    background-color: var(--text-color);
    color: var(--background-color);
- }
+   box-shadow: var(--box-shadow-large);
+  }
 
  .about img {
   height: 10rem;
