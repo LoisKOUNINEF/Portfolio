@@ -188,7 +188,7 @@
     padding: 1em;
     font-weight: 600;
     margin-top: 2em;
-    border-radius: 100px;
+    border-radius: 6em;
     transition: var(--transition);
     box-shadow: var(--box-shadow-dark);
     border: 1px solid var(--background-color);
@@ -200,8 +200,6 @@
     border-radius: 6em;
     transition: var(--transition);
     box-shadow: var(--box-shadow-light);
-    padding-left: 1em!important;
-    padding-right: 1em!important;
     transition: var(--transition);
   }
 
