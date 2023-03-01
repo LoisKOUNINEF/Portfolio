@@ -141,7 +141,7 @@
     color: var(--text-color);
     padding: 3em;
     border-radius: 1.5em;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: var(--box-shadow-dark) var(--box-shadow-small);
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-delay: 0s;
