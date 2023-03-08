@@ -120,6 +120,7 @@
   }
 
   .links {
+    transition: var(--transition);
     margin-top: 1em;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
@@ -128,10 +129,15 @@
     animation-name: slideInLeft;
   }
 
-  .button:hover {
+  .links:hover .button {
+    opacity: .5
+  }
+
+  .links:hover .button:hover {
     background-color: var(--text-color);
     color: var(--background-color);
     cursor: pointer;
+    opacity: 1;
   }
 
   button:hover {
