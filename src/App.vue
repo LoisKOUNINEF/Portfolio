@@ -17,7 +17,7 @@ import NavBar from '@/components/NavBar.vue'
 
   :root {
     --background-color: linear-gradient(#e8e8e8, #b7b7b7);
-    --background-color-hover: linear-gradient(#525252, #8c8c8c);
+    --background-color-hover: linear-gradient(to top, #525252, #8c8c8c);
     --text-color: #000000;
     --text-color-hover: #e8e8e8;
     --transition: 1s all ease;

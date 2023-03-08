@@ -1,6 +1,6 @@
 :root {
   --background-color: linear-gradient(to top, #525252, #8c8c8c);
-  --background-color-hover: linear-gradient(to top, #e8e8e8, #b7b7b7) ;
+  --background-color-hover: linear-gradient(#e8e8e8, #b7b7b7) ;
   --text-color: #e8e8e8;
   --text-color-hover: #000000;
   /*--app-background-color: ;*/
