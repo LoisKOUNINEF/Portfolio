@@ -51,7 +51,7 @@
             </div>
           </router-link>
           <div class="small-button">
-          <a href=mailto:“lkouninef@gmail.com”>
+          <a href=mailto:lkouninef@gmail.com>
             ✉️ {{ $t("maincard.contact") }} ✉️
           </a>
         </div>
