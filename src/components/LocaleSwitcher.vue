@@ -21,7 +21,7 @@ export default {
 <style scoped>
 
   select {
-    background-color: var(--background-color);
+    background: var(--background-color);
     color: var(--text-color);
     height: 50%;
     border-radius: 6em;
@@ -29,17 +29,12 @@ export default {
   }
 
   select:hover {
-    background-color: var(--background-color);
+    background: var(--background-color);
     color: var(--text-color);
     cursor: pointer;
   }
 
   @media only screen and (max-width: 900px) {
-    select:hover {
-      background-color: var(--text-color);
-      color: var(--background-color);
-    }
-
     select {
       border-radius: 3em;
     }

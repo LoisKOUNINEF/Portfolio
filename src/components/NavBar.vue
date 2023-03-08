@@ -78,7 +78,7 @@
     margin-bottom: 2em;
     padding-bottom: 1em;
     background-color: var(--text-color);
-    color: var(--background-color);
+    color: var(--text-color-hover);
     transform: translate3d(0,0,0);
     transition: 1s all ease;
   }
@@ -91,7 +91,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--background-color);
+    background: var(--background-color);
     color: var(--text-color);
     padding: .75em;
     margin-left: 1em;
@@ -103,8 +103,8 @@
 
   button {
     height: 60%;
-    background-color: var(--text-color);
-    color: var(--background-color);
+    background: var(--background-color-hover);
+    color: var(--text-color-hover);
   }
 
   .toggle {
@@ -134,14 +134,14 @@
   }
 
   .links:hover .button:hover {
-    background-color: var(--text-color);
-    color: var(--background-color);
+    background: var(--background-color-hover);
+    color: var(--text-color-hover);
     cursor: pointer;
     opacity: 1;
   }
 
   button:hover {
-    background-color: var(--background-color);
+    background: var(--background-color);
     color: var(--text-color);
     cursor: pointer;
   }

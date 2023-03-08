@@ -35,7 +35,7 @@
   }
 
 	button {
-    background-color: var(--background-color)!important;
+    background: var(--background-color)!important;
     color: var(--text-color)!important;
     font-weight: 600;
     border-radius: 6em;
@@ -47,7 +47,7 @@
   }
 
   button:hover {
-    background-color: var(--background-color);
+    background: var(--background-color);
     color: var(--text-color);
     cursor: pointer;
   }

@@ -125,7 +125,7 @@ export default {
   }
 
   h2 {
-    color: var(--background-color);
+    color: var(--text-color-hover);
   }
 
   .button-container {
@@ -137,8 +137,8 @@ export default {
 
   button {
     height: 60%;
-    background-color: var(--text-color);
-    color: var(--background-color);
+    background: var(--background-color-hover);
+    color: var(--text-color-hover);
     border-radius: 6em;
     transition: var(--transition);
     box-shadow: var(--box-shadow-light) var(--box-shadow-small);
@@ -149,7 +149,7 @@ export default {
   }
 
   button:hover {
-    background-color: var(--background-color);
+    background: var(--background-color);
     color: var(--text-color);
   }
 

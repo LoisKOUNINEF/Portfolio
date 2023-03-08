@@ -115,7 +115,7 @@
   }
 
   .first-container {
-    background-color: var(--background-color);
+    background: var(--background-color);
     color: var(--text-color);
     width: 30%;
     padding: 1em;
@@ -137,7 +137,7 @@
 
   .second-container {
     width: 70%;
-    background-color: var(--background-color);
+    background: var(--background-color);
     color: var(--text-color);
     padding: 3em;
     border-radius: 1.5em;
@@ -183,15 +183,15 @@
   }
 
   .button {
-    background-color: var(--text-color);
-    color: var(--background-color);
+    background: var(--background-color-hover);
+    color: var(--text-color-hover);
     padding: 1em;
     font-weight: 600;
     margin-top: 2em;
     border-radius: 6em;
     transition: var(--transition);
     box-shadow: var(--box-shadow-dark) var(--box-shadow-small);
-    border: 1px solid var(--background-color);
+    border: 1px solid var(--text-color-hover);
     width: 100%;
   }
 
@@ -199,14 +199,13 @@
     font-weight: 600;
     border-radius: 6em;
     transition: var(--transition);
-    box-shadow: var(--box-shadow-light);
     transition: var(--transition);
   }
 
   button {
     justify-content: center;
     align-items: center;
-    background-color: var(--background-color);
+    background: var(--background-color);
     color: var(--text-color);
     margin-left: 1em;
     font-weight: 600;
@@ -217,15 +216,15 @@
   }
 
   .button:hover {
-    background-color: var(--background-color);
+    background: var(--background-color);
     color: var(--text-color);
     cursor: pointer;
     border: 1px solid var(--text-color);
   }
 
   button:hover {
-    background-color: var(--text-color);
-    color: var(--background-color);
+    background: var(--background-color-hover);
+    color: var(--text-color-hover);
     cursor: pointer;
   }
 

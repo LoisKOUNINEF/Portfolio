@@ -83,13 +83,14 @@
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-name: slideInLeftBase;
+    transition: var(--transition);
   }
 
   .project-card {
     width: 45%;
     padding: 1em;
     flex-wrap: 0 0 40%;
-    background-color: var(--background-color);
+    background: var(--background-color);
     color: var(--text-color);
     border-radius: 1em;
     box-shadow: var(--box-shadow-light) var(--box-shadow-small);
@@ -97,8 +98,8 @@
   }
 
   .project-card:hover {
-   background-color: var(--text-color);
-   color: var(--background-color);
+   background: var(--background-color-hover);
+   color: var(--text-color-hover);
    box-shadow: var(--box-shadow-large);
   }
 
