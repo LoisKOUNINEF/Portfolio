@@ -41,14 +41,12 @@
 
   window.addEventListener("scroll", reveal);
 
-  import jsonData from "../projects/projects.json"
-  const orderedJson = jsonData.ProjectsArray.reverse()
+  import Projects from '../projects/projects';
+
   export default {
     data() {
-      const locale = this.$i18n.locale;
-      console.log(locale)
       return {
-        projectData: orderedJson,
+        projectData: Projects,
       }
     }
   }
