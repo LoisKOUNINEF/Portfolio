@@ -44,9 +44,11 @@ import NavBar from '@/components/NavBar.vue'
   @keyframes slideInTop {
     0% {
       transform: translateY(-100%);
+      opacity: .2;
     }
     70% {
       transform: translateY(10%);
+      opacity: 1;
     }
     100% {
       transform: translateY(0);
@@ -56,9 +58,11 @@ import NavBar from '@/components/NavBar.vue'
   @keyframes slideInBot {
     0% {
       transform: translateY(100%);
+      opacity: .2;
     }
     70% {
       transform: translateY(-10%);
+      opacity: 1;
     }
     100% {
       transform: translateY(0);
@@ -68,9 +72,11 @@ import NavBar from '@/components/NavBar.vue'
   @keyframes slideInLeft {
     0% {
       transform: translateX(-100%);
+      opacity: .5;
     }
     70% {
       transform: translateX(10%);
+      opacity: 1;
     }
     100% {
       transform: translateX(0);
@@ -80,30 +86,37 @@ import NavBar from '@/components/NavBar.vue'
   @keyframes slideInRight {
     0% {
       transform: translateX(100%);
+      opacity: 0;
     }
     70% {
       transform: translateX(-10%);
+      opacity: .5;
     }
     100% {
       transform: translateX(0);
+      opacity: 1;
     }
   }
 
   @keyframes slideInBotBase {
     0% {
       transform: translateY(100%);
+      opacity: 0;
     }
     100% {
       transform: translateY(0);
+      opacity: 1;
     }
   }
 
   @keyframes slideInLeftBase {
     0% {
       transform: translateX(-100%);
+      opacity: .5;
     }
     100% {
       transform: translateX(0);
+      opacity: 1;
     }
   }
 
