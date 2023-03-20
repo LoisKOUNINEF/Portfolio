@@ -7,9 +7,9 @@
     "lightTheme": "Light"
   },
   "maincard": {
-    "profession": "Web Developper",
+    "profession": "Web Developer",
     "about": "About me",
-    "body": "After about fifteen years working in hotel and catering, I developped a true passion about programming in general and web development in particular. I have an appetite for Clean Code principles and best practices, and I care about producing good code, readable and maintenable.",
+    "body": "After about fifteen years working in hotel and catering, I developed a true passion about programming in general and web development in particular. I have an appetite for Clean Code principles and best practices, and I care about producing good code, readable and maintenable.",
     "ctaresume": "Here is ",
     "resume": "my resume",
     "ctaprojects": "or you can also browse some of",
