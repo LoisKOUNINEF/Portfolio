@@ -1,0 +1,9 @@
+:root {
+  --background-color: linear-gradient(to top, #525252, #8c8c8c);
+  --background-color-hover: linear-gradient(#e8e8e8, #b7b7b7) ;
+  --text-color: #e8e8e8;
+  --text-color-hover: #000000;
+  /*--app-background-color: ;*/
+  --box-shadow-dark: rgba(255, 255, 255, 0.5) 0px 3px 8px;
+  --box-shadow-light: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
